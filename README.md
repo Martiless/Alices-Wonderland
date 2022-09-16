@@ -1,108 +1,370 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Alices Wonderland: 
 
-Welcome USER_NAME,
+This website is designed for a fictional shop based in Wonderland. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This website has been created as the Fifth Milestone project for Code Institute's Full Stack Software Development Diploma. It was built using a Full-Stack Toolkit, with the addition of E-commerce Applications such as Stripe. GitPod was used for writing the code for this website, as well as committing and pushing to GitHub. GitHub was then used to store the project after it had been pushed from GitPod. Once all the code had been written, Heroku was then used to deploy the website. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+### View the live website [here]()
+![Live Website]()
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+***
+## Table of content: 
+ 1. [Site Goals](#Site-Goals)
+ 1. [UX](#UX)
+      1. [User Stories](#User-Stories)
+      1. [Development Planes](#Development-Planes)
+            * [Strategy](#Strategy)
+            * [Scope](#Scope)
+            * [Structure](#Structure)
+            * [Skeleton](#Skeleton)
+            * [Surface](#Surface)
+      1. [Color](#Color)
+      1. [Font](#Font)
+      1. [Images](#Images)
+ 1. [Marketing](#Marketing)
+      1. [Facebook](#Facebook)
+      1. [Instagram](#Instagram)
+      1. [SEO](#SEO)
+ 1. [Features](#Features)
+ 1. [Testing](#Testing)
+ 1. [User Stories Met](#User-Stories-Met)
+ 1. [Bugs](#Bugs)
+ 1. [Technologies Used](#Technologies-Used)
+ 1. [Validation](#Validation)
+ 1. [Accessibility](#Accessibility)
+ 1. [Deployment](#Deployment)
+ 1. [Credits](#Credits)
+ 1. [Acknowledgements](#Acknowledgements)
 
-`python3 -m http.server`
+***
+ 
+## Site Goals:
 
-A blue button should appear to click: _Make Public_,
+The goals for this site are as follows:
+* 
 
-Another blue button should appear to click: _Open Browser_.
+## UX:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User stories:
+To demonstrate the Agile approach that was used for this project, GitHub issues were used and a Kanban board was used to record all the user stories. 
+The user stories were categorised using different labels, i.e MO - *Must have*, SO - *Should Have* and CO - *Could have*.
+Each story was then moved from 'To Do' to 'In Progress' to  'Done' as the project progressed, with CO stories moved to a future feature board. 
 
-A blue button should appear to click: _Make Public_,
+#### Project Progression: 
+<details>
+<summary>Progression One</summary>
 
-Another blue button should appear to click: _Open Browser_.
+![Progression One]()
+</details>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<details>
+<summary>Progression Two</summary>
 
-To log into the Heroku toolbelt CLI:
+![Progression Two]()
+</details>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<details>
+<summary>Progression Three</summary>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Progression Three]()
+</details>
 
-------
+<details>
+<summary>Progression Four</summary>
 
-## Release History
+![Progression Four]()
+</details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<details>
+<summary>Progression Five</summary>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Progression Five]()
+</details>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<details>
+<summary>Progression Six</summary>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Progression Six]()
+</details>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+***
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+#### New User:  
+* As a new user,  
+* As a new user, 
+* As a new user, 
+* As a new user, 
+* As a new user, 
+* As a new user,  
+* As a new user, 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### Returning User:
+* As a returning user, 
+* As a returning user, 
+* As a returning user,  
+* As a returning user, 
+* As a returning user, 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Development Planes:
+To create a website that is comprehensive and informative for a user, as a developer you need to look at all aspects of the website and how someone who visits your website will use it. You have to consider all the user stories that have been outlined in the above sections.  
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Strategy
+The strategy principal looks at user needs, as well product/service objectives. This website's target audience was broken down into three categories:
+### Roles: 
+* New User
+* Existing User  
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Demographic:
+* 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Psychographic:
+* 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#### Lifestyle:
+* 
+#### Values:
+* 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### The website needs to allow users to:  
+* 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### The website needs to allow the restaurant owner to:  
+*    
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Scope:  
 
-------
+With the structure in place, it was then time to move onto the scope plane. This was all about developing website requirements based on the goals set out in the strategy plane. These requirements are broken down into two categories. 
+### Content Requirements:
+1. The user will be looking for:
+      * 
 
-## FAQ about the uptime script
+### Functionality Requirements:
+1. The user will be able to:
+      * 
 
-**Why have you added this script?**
+***
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Structure:
 
-**How will this affect me?**
+The information above was then used to create a structure for the website. Below is a site map showing how users can navigate the website intuitively 
+<details>
+<summary>Sitemap</summary>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Sitemap]()
+</details>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Skeleton:
+[Wireframes]() were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
 
-**So….?**
+## Surface:
+[Please see the live site here]()  
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+***
+[Back to top](#Alices-Wonderland)  
 
-**Can I opt out?**
+### Color: 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<details>
+<summary>Color Checker 1</summary>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Color Checker 1]()
+</details>
 
-**Anything more?**
+&nbsp;
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+<details>
+<summary>Color Checker 2</summary>
 
----
+![Color Checker 2]()
+</details>
 
-Happy coding!
+
+
+### Font:
+
+ 
+
+### Images:
+ 
+
+
+***
+[Back to top](#Alices-Wondeland)  
+
+## Marketing:
+
+### Facebook:
+
+### Instagram:
+
+### SEO :
+
+
+## Features:
+There are several features on this site to help users get the most out of their visit to the site.  
+
+### General:
+
+<details>
+<summary>Header and Nav Bar:</summary>
+
+![Header and Nav Bar]()
+</details>
+Each page has a Header and Navigation bar section, located at the top of the page. 
+The navigation bar consisted of links to a Book A Table page, a Newsletter page, a Login page, a Register page and for authorised users a My Bookings, as well as a Home button that brings the user back to the landing page. The landing page can also be reached by clicking on the restaurant logo.
+
+&nbsp;
+
+<details>
+<summary>Footer Information:</summary>
+
+![Opening Hours & Social Media]()
+</details> 
+Each page also contains a footer element that consists of the restaurant's social media accounts (Facebook, Twitter and Instagram), as well as the opening hours for the restaurant and copyright information. 
+
+&nbsp;
+
+### Home page:
+The *Home* page contains the header and footer as mentioned above  
+
+&nbsp;
+
+## Future Features:
+
+
+***
+
+[Back to top](#Alices-Wonderland)  
+
+## User Stories Met:
+This section is to look back at the User stories we established during the strategy phase of the project. 
+We are looking to see if we have met all the goals we set out. 
+#### New User: 
+* As a new user, I want to register so I can make a booking   
+**Met on the Book a Table Page**
+* As a new user, I want to book a table at Non-Dairy Godmother restaurant   
+**Met on the Book a Table Page**
+* As a new user, I want to pick the time, date and number of people for the booking   
+**Met on the Book form on the Book a Table page**
+* As a new user, I also want the option to pick the occasion and area I would like to site   
+**Met on the Book form on the Book a Table page**
+* As a new user, I want to be able to view menus  
+**Met on the Menus page, users can view three menus for the restaurant**
+* As a new user I want to be able to log in to edit or cancel my booking   
+**Met on the My Bookings page once the user is logged in**
+* As a new user, I want to be able to sign up for the restaurant's monthly newsletter  
+**Met on the Newsletter page**
+
+#### Returning User:
+* As a returning user, I want to log in to my account  
+**Met on the Log in page**
+* As a returning user, I want to book a table at Non-Dairy Godmother restaurant   
+**Met on the Book a Table Page**
+* As a returning user, I want to view my bookings    
+**Met on the My Bookings page once the user is logged in**
+* As a returning user, I want to be able to edit or cancel my bookings   
+**Met on the My Bookings page once the user is logged in**
+* As a returning user, I want to see if the menus have been updated   
+**Met on the Menus page**
+
+***
+
+## Testing:
+Testing information can be viewed [here]()
+
+***
+
+## Bugs:
+1.   
+
+***
+
+[Back to top](#Alices-Wonderland) 
+
+## Technologies Used:
+For this project, the following technologies were used.  
+
+### Languages:
+* HTML
+* CSS
+* Python
+* Javascript
+ 
+
+### Frameworks, Libraries, Programs & Applications Used:
+* Django
+* PostgreSQL
+* Bootstrap
+
+#### Google Font
+* Google Font was used to import the chosen font for this project Lora.
+
+#### Font Awesome
+* Font Awesome was used on each page of the website to provide icons for UX purposes.  
+
+#### GitPod
+* GitPod was used for writing all the code for this project. It was also used to commit and push to GitHub.  
+
+#### GitHub 
+* GitHub was used to store this project.
+
+#### Heroku
+* Heroku was used to deploy the project.
+
+#### Cloudinary
+* Cloudinary was used to store some of the images used in this project
+
+#### Balsamiq 
+* Balsamiq was used to draw initial Wireframes for this project.
+
+#### Figma
+* Figma was used during the structure phase of this project. It was used to create a sitemap of the website. 
+
+#### Google Development Tools
+* Google Dev Tools was used to edit code and check responsiveness before making the changes permanent.
+
+*** 
+
+[Back to top](#Alices-Wonderland)
+
+## Validation:
+
+* HTML:
+      - No errors were found when passed through the [W3C Validator tool]()
+      - To view screenshots of validations please click [here]()
+
+* CSS:
+      - No errors were found when passed through the [W3C Validator tool]() 
+
+* JavaScript: 
+      - No costume Javascript was used in this project. The Javascript included at the end of my base.html was taken from the Code Institutes walkthrough project. 
+
+* Python: 
+      - No errors were found when passed through [PEP8 Validator]()
+
+***
+
+[Back to top](#Alices-Wonderland)
+
+## Accessibility:
+![LightHouse Report]()
+
+***
+
+## Deployment:
+Deployment information can be found [here]()
+
+***
+
+## Credits:
+* The initial setup of the Django project was done following the Code Institutes walkthrough project.  
+
+
+## Acknowledgements:
+* I would like to thank Brian O’Hare for being my mentor for this project.
+
+
+*** 
+[Back to top](#Alices-Wonderland) 
