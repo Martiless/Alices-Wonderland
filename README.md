@@ -242,31 +242,31 @@ The *Home* page contains the header and footer as mentioned above
 This section is to look back at the User stories we established during the strategy phase of the project. 
 We are looking to see if we have met all the goals we set out. 
 #### New User: 
-* As a new user, I want to register so I can make a booking   
+* As a new user,   
 **Met on the Book a Table Page**
-* As a new user, I want to book a table at Non-Dairy Godmother restaurant   
+* As a new user,    
 **Met on the Book a Table Page**
-* As a new user, I want to pick the time, date and number of people for the booking   
+* As a new user,    
 **Met on the Book form on the Book a Table page**
-* As a new user, I also want the option to pick the occasion and area I would like to site   
+* As a new user,   
 **Met on the Book form on the Book a Table page**
-* As a new user, I want to be able to view menus  
+* As a new user,   
 **Met on the Menus page, users can view three menus for the restaurant**
-* As a new user I want to be able to log in to edit or cancel my booking   
+* As a new user,   
 **Met on the My Bookings page once the user is logged in**
-* As a new user, I want to be able to sign up for the restaurant's monthly newsletter  
+* As a new user,   
 **Met on the Newsletter page**
 
 #### Returning User:
-* As a returning user, I want to log in to my account  
+* As a returning user,   
 **Met on the Log in page**
-* As a returning user, I want to book a table at Non-Dairy Godmother restaurant   
+* As a returning user,    
 **Met on the Book a Table Page**
-* As a returning user, I want to view my bookings    
+* As a returning user,    
 **Met on the My Bookings page once the user is logged in**
-* As a returning user, I want to be able to edit or cancel my bookings   
+* As a returning user,    
 **Met on the My Bookings page once the user is logged in**
-* As a returning user, I want to see if the menus have been updated   
+* As a returning user,    
 **Met on the Menus page**
 
 ***
