@@ -1,0 +1,1 @@
+web: gunicorn alices_wonderland.wsgi
