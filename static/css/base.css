@@ -9,14 +9,14 @@ html {
 
 body {
     background-color: darkmagenta !important;
-    background-image: url('/media/main-image-one.jpg') no-repeat centre centre fixed;
+    background: url('/media/main-image-three.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Lora;
 }
 
 /* Logo and Navbar*/
 
-.nav-link {
+.nav-link, p {
     color: darkmagenta;
     font-family: Merienda;
     font-size: large;
@@ -24,6 +24,60 @@ body {
 }
 
 
-main-logo-text {
-   font-size: 60px;   
+.main-logo-text {
+   font-size: 50px;   
+}
+
+.topnav {
+    background-color: aliceblue;
+}
+
+.search-bar {
+    font-family: Merienda;
+    text-transform: uppercase;
+}
+
+
+/* Buttons */
+
+.shop-now-button {
+    background: #f0f8ff;
+    color: #8b008b;
+    min-width: 260px;
+}
+
+.btn-magenta {
+    background: #8b008b;
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-magenta:hover,
+.btn-magenta:active,
+.btn-magenta:focus {
+    background: #00148b;
+    color: white;
+}
+
+/* Main welcome area */
+
+.welcome-box {
+    background-color: #8b008b;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    opacity: 0.8;
+    text-align: center;
+    border: 3px aliceblue solid;
+    border-radius: 20px;
+}
+
+/* Icons */
+
+.fa-circle-user {
+    font-size: large;
+    font-family: Merienda;
+    color: #8b008b;
 }

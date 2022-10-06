@@ -32,7 +32,7 @@
     <!--Import of Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!--Link to CSS file-->
+    <!--Link to CSS-->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -68,7 +68,7 @@
                 <form method="GET" action="">
                     <div class="input-group w-100 search-bar">
                         <input class="form-control rounded border-right-0" type="text" name="q"
-                            placeholder="Search for some wonders">
+                            placeholder="Search for something wonderful!">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -84,7 +84,7 @@
                     <li class="list-inline-item">
                         <a class="nav-link" href="">
                             <div class="text-center">
-                                <div><i class="fa-solid fa-person-dress" aria-hidden="true"></i></div>
+                                <div><i class="fa fa-person-dress" aria-hidden="true"></i></div>
                                 <p class="my-0">About Me</p>
                             </div>
                         </a>
@@ -93,7 +93,7 @@
                         <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fa-solid fa-circle-user" aria-hidden="true"></i></div>
+                                <div><i class="fa fa-circle-user" aria-hidden="true"></i></div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
@@ -113,7 +113,7 @@
                     <li class="list-inline-item">
                         <a class="text-info font-weight-bold nav-link" href="">
                             <div class="text-center">
-                                <div><i class="fa-solid fa-basket-shopping" aria-hidden="true"></i></div>
+                                <div><i class="fa fa-basket-shopping" aria-hidden="true"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
                                         €{{ grand_total|floatformat:2 }}
