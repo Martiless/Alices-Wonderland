@@ -95,7 +95,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-#Email settings taken from CI Walkthrough Project
+# Email settings taken from CI Walkthrough Project
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
