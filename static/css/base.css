@@ -1,0 +1,29 @@
+/* Imported Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merienda:wght@400;700&family=Rock+Salt&display=swap');
+
+
+/* Header */
+html {
+    height: 100% !important;
+}
+
+body {
+    background-color: darkmagenta !important;
+    background-image: url('/media/main-image-one.jpg') no-repeat centre centre fixed;
+    background-size: cover;
+    font-family: Lora;
+}
+
+/* Logo and Navbar*/
+
+.nav-link {
+    color: darkmagenta;
+    font-family: Merienda;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+
+main-logo-text {
+   font-size: 60px;   
+}
