@@ -14,6 +14,10 @@ body {
     font-family: Lora;
 }
 
+a:hover {
+    color: #8b008b;
+}
+
 /* Logo and Navbar*/
 
 .nav-link, p {
@@ -30,11 +34,43 @@ body {
 
 .topnav {
     background-color: aliceblue;
+    height: 150px;
 }
 
 .search-bar {
     font-family: Merienda;
     text-transform: uppercase;
+}
+
+.products-navbar {
+    background-color: aliceblue;
+}
+
+.dropdown-menu.show {
+    background-color: #f0f8ff;
+    
+}
+
+.dropdown-item {
+    background-color: #f0f8ff;
+    color: #4dad7d;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.dropdown-item:hover {
+    color: #8b008b;
+}
+
+/* Banner */
+
+.notification-banner {
+    background-color: #4dad7d;
+    color: aliceblue;
+    font-family: Merienda;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -74,6 +110,11 @@ body {
     border-radius: 20px;
 }
 
+.main-page-container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
 /* Icons */
 
 .fa, .fas {
@@ -92,6 +133,7 @@ body {
     font-size: large;
     text-transform: uppercase;
     text-align: center;
+    padding: 5px;
 }
 
 .footer-par {
