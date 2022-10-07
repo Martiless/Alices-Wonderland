@@ -1,0 +1,394 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340101",
+            "name": "Talking Tiger Lily",
+            "description": "Beautiful talking tiger lily. This chatty flower is the perfect addition to any garden. They will get on well with other plants and will keep you company while tending to your garden. Tiger lily care involves little work after plants are established, as they are somewhat drought tolerant. When growing tiger lilies, you’ll find they often thrive with existing rainfall.",
+            "price": 99.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "dde608e75e13370f56a86653b3e58258.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340102",
+            "name": "Singing White Rose",
+            "description": "This rare and unique rose is the ultimate plant for any collector. This rose will have a presents in your garden that can not be ignored. Her beautiful voice will capture the ear of any visitor and will be the talking point of any party",
+            "price": 350.00,
+            "category": 1,
+            "rating": 5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "33f35918d5ba3fd33cd4d8fe3cb10e94.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340103",
+            "name": "Painted Rose Bush",
+            "description": "When a standard rose bush just won't do, you need a Painted Rose Bush. Hand painted by the Queen of Hearts soldiers, this is the perfect gift for any budding gardener",
+            "price": 145.99,
+            "category": 1,
+            "rating": 4.2,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "0f1c00bc86a387f7f3be408183fcb2a6.png"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340104",
+            "name": "Unbirthday Party",
+            "description": "You are invited to the biggest party of the year. Join me Alice, Hatter and March Hare for your Unbirthday party. Complete with tea, cake and a little bit of MADNESS!",
+            "price": 649.99,
+            "category": 5,
+            "rating": 6,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "ef38ee8bcfadd0e35a6aa814d3a1b9be.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340105",
+            "name": "Horn Duck",
+            "description": "Each Horn Duck has a yellow horn for their head as well as a purple bulb for their body",
+            "price": 49.99,
+            "category": 4,
+            "rating": 3.8,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "0dc057e95c5e158eeb292404b3c1bee0.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340106",
+            "name": "Accordion Owl",
+            "description": "This red owl that can stretch its neck like an accordion. Whenever it stretches its neck, not only does it hoot but it also makes accordion sounds.",
+            "price": 69.99,
+            "category": 4,
+            "rating": 3.8,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "b19dc3f57c57ff425e0428793c35ac89.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340107",
+            "name": "Bread and Butterfly",
+            "description": "This unique creature has slices of bread for wings with butter spread on the outside of their wings",
+            "price": 30.50,
+            "category": 4,
+            "rating": 5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "64d19e6a47993028a7106bc940fe68d1.png"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340108",
+            "name": "Cage Bird",
+            "description": "This large bird like creature has a yellow bird cage for a body and has no wings.",
+            "price": 105.50,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "cagebird-3.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340109",
+            "name": "Caterpillar",
+            "description": "Caterpillar has a passion for grammer frequently over-emphasising certain words.",
+            "price": 120,
+            "category": 4.9,
+            "rating": 5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "22-222353_disney-alice-in-wonderland-characters-clip-art-back.png"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340110",
+            "name": "Cheshire Cat",
+            "description": "Cheshire Cat has a permanent smile on his face and he can disappear at will. He is a very odd being who is able to reshape his body to either amuse or frighten his visitors.",
+            "price": 215,
+            "category": 4,
+            "rating": 5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "f42437f45ff8e7d1f3f1dd396c452d83--wonderland-tattoo-wonderland-party.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340111",
+            "name": "Curious Oyster",
+            "description": "These adorable and curious creatures. Wearing shell bonnet and blue dresses, these oysters are overly curious and easily swayed",
+            "price": 49.99,
+            "category": 4,
+            "rating": 3.6,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "2d0b41f14de02f5ea74d7d3eaceee63f.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340112",
+            "name": "Talking Doorknob",
+            "description": "Doorknobs are generally nice beings, who tend to be quite kind to visitors. He tends to use humor to lighten serious situations",
+            "price": 64.50,
+            "category": 3,
+            "rating": 2.5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "115-1151668_alice-in-wonderland-disney-characters-png-transparent-png.png"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340113",
+            "name": "The Mad Hatters Hat",
+            "description": "Replica of the hat worn by the hatter during one of his famous Unbirthday Parties. Perfect for any collector",
+            "price": 199.50,
+            "category": 6,
+            "rating": 5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "356918ce382e055ef9250d728f921d26.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340114",
+            "name": "Shrinking Potion",
+            "description": "Just one sip of our shrinking potion and you will be small enough to fit through anything",
+            "price": 85.00,
+            "category": 2,
+            "rating": 4.2,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "81ff6368844c84cb026ed73f4097f68b.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340115",
+            "name": "Broomdog",
+            "description": "This hard working dog like creature will keep himself busy cleaning up after anyone who walks on his path",
+            "price": 135.00,
+            "category": 5,
+            "rating": 4.5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "c8442c327d045f7b1a238ccf0b6e691d.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340116",
+            "name": "Mome Raths",
+            "description": "These bipedal, flower-like creatures have a pair of googly eyes and fuzzy hair on their heads. When they sleep, only their fuzzy hair is visible. The perfect addition to any garden, just make sure to remind visitor DON'T STEP ON THE MOME RATHS! Please Note: each order will include 10 Mome Raths",
+            "price": 40.00,
+            "category": 1,
+            "rating": 4.5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "eca1219efaa7669cfab9fca1b29669f6--disney-images-disney-addict.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340117",
+            "name": "Hammer and Pencil Birds",
+            "description": "This hard working pair work together to get the job done. They can often to seen building the signs around Wonderland. Please Note: These birds come in pairs",
+            "price": 115.00,
+            "category": 1,
+            "rating": 4,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "b4a98111bc3c1d094377f8902c92fdf3.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340118",
+            "name": "Glasses Bird",
+            "description": "As you can guess, this bird gets its name because of its resemblance to a pair of glasses. The enjoy having a fun with the Mirror bird by allowing humans to wear them like glasses ",
+            "price": 105.00,
+            "category": 1,
+            "rating": 3.6,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "c89d2872e3c357086474a35c68435d00.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340119",
+            "name": "Flamingo",
+            "description": "As used by the Queen of Hearts in her game of croquet. Complete the set by picking up Hedgehog too",
+            "price": 65.00,
+            "category": 1,
+            "rating": 3,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "97822863909b5ec1778d6e12c6ed64f8--flamingo-party-pink-flamingos.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340120",
+            "name": "Hedgehog",
+            "description": "As used by the Queen of Hearts in her game of croquet. Complete the set by picking up Falmingo too",
+            "price": 30.00,
+            "category": 1,
+            "rating": 3,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "a867f9d0ce7c0523a9824a9e17ac4ce0.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340121",
+            "name": "Growing Cookies",
+            "description": "Always wanted to be a bit taller? Then why not try out of Growth cookies. WARNING: Eating too much can lead to uncontrollable growing",
+            "price": 30.00,
+            "category": 2,
+            "rating": 4,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "06218135d29edec9869ac8a09043dc60--alice-in-wonderland--wonderland-party.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340122",
+            "name": "The Queen Of Hearts Crown",
+            "description": "Replica of the crown worn by the Queen of Hearts during one of her croquet match against Alice on her first visit to Wonderland. Perfect for any collector",
+            "price": 300.00,
+            "category": 6,
+            "rating": 5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "367-3670211_disney-queen-of-hearts-crown-hd-png-download.png"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340123",
+            "name": "Tea with the March Hare",
+            "description": "Whatever you do, Don't be LATE FOR TEA! This rare opportunity to have afternoon tea with the one and only March Hare is the perfect afternoon for any Wonderland fan",
+            "price": 250.00,
+            "category": 5,
+            "rating": 5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "28-289865_dormouse-alice-in-wonderland-alice-in-wonderland-clipart.png"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340124",
+            "name": "The White Rabbits Pocket Watch",
+            "description": "Never be late again with this replica of the famous White Rabbit Pocket Watch",
+            "price": 120.00,
+            "category": 3,
+            "rating": 4.2,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "imgbin-white-rabbit-pocket-watch-gold-watch-s-white-analog-pocket-watch-illustration-CRF7QinUwQDVM3GdnKPwtRU5S.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340125",
+            "name": "Umbrella Vultures",
+            "description": "These vultures are in the shape of an umbrella. They like to bathe in ponds and streams but don't get too close as they can be quite an intimidating creature",
+            "price": 95.00,
+            "category": 3,
+            "rating": 3.5,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "2efb664c392b34dedffb0d1b1eca011e.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340126",
+            "name": "Wonderland Road Signs",
+            "description": "Built by the Hammer and Pencil Birds, these signs create the ultimate Wonderland feel in any house",
+            "price": 54.99,
+            "category": 3,
+            "rating": 4.1,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "1915932a1a9a3000523b9355ee347dd3.png"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340127",
+            "name": "Shovel Birds",
+            "description": "As the name suggested, this bird is called so because it's beak is in the shape of a shovel. Keep an eye on them as they can often be caight digging up peoples gardens",
+            "price": 89.99,
+            "category": 4,
+            "rating": 4.1,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "46834b930bcc6463e1fbe0f72a9dfcfd.jpg"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340128",
+            "name": "Drum and Saucer Frogs",
+            "description": "These musical creatures are shaped like a drum and saucer and make music when they jump. Please Note: these frogs come in pairs",
+            "price": 99.99,
+            "category": 4,
+            "rating": 4.6,
+            "image_url": DONT FORGET TO FILL IN,
+            "image": "8c204c5687a94cbe7f9cb6ecbf40017d.jpg"
+        }
+    }
+]

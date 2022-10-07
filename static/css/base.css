@@ -44,6 +44,7 @@ a:hover {
 
 .products-navbar {
     background-color: aliceblue;
+    color: #4dad7d;
 }
 
 .dropdown-menu.show {
@@ -61,6 +62,7 @@ a:hover {
 .dropdown-item:hover {
     color: #8b008b;
 }
+
 
 /* Banner */
 
