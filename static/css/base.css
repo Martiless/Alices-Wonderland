@@ -57,7 +57,7 @@ body {
 .btn-magenta:hover,
 .btn-magenta:active,
 .btn-magenta:focus {
-    background: #00148b;
+    background: #4dad7d;
     color: white;
 }
 
@@ -76,8 +76,25 @@ body {
 
 /* Icons */
 
-.fa-circle-user {
+.fa, .fas {
     font-size: large;
     font-family: Merienda;
     color: #8b008b;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: aliceblue;
+    color: darkmagenta;
+    font-family: Merienda;
+    font-size: large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-par {
+    font-family: Lora;
+    font-size: medium;
 }
