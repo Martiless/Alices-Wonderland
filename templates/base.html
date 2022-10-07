@@ -99,14 +99,14 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Manage Store</a>
-                                {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% if request.user.is_superuser %}
+                            <a href="" class="dropdown-item">Manage Store</a>
+                            {% endif %}
+                            <a href="" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -116,9 +116,9 @@
                                 <div><i class="fa fa-basket-shopping" aria-hidden="true"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                        €{{ grand_total|floatformat:2 }}
+                                    €{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        €0.00
+                                    €0.00
                                     {% endif %}
 
                                 </p>
@@ -142,6 +142,58 @@
 
     {% block postloadjs %}
     {% endblock %}
+
+    <!--Footer section including social media and useful links-->
+    <footer class="container-fluid footer">
+        <div id="footer-details" class="row">
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub footer-heading"><strong>Useful Links:</strong></h5>
+                <ul class="list-inline">
+                    <li class="inline-block">
+                        <a target="_blank" href="">
+                            <p class="footer-par">Contact Us</p>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a target="_blank" href="">
+                            <p class="footer-par">Sign up for our newsletter</p>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a target="_blank" href="">
+                            <p class="footer-par">Privacy Policy</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                <div class="col-sm-4">
+                    <h5 class="uppercase general-sub footer-heading"><strong>Social Media:</strong></h5>
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/alices.wonderland.cork">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/aliceswonderlandcork/">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="col-sm-4">
+                        <h6 class="uppercase general-sub footer-heading"><strong>Copyright 2022 &nbsp;<i class="fa fa-copyright"
+                                aria-hidden="true"></i></strong></h6>
+                                <ul class="list-inline">
+                                    <li class="inline-block">
+                                            <p class="footer-par">For educational purposes only</p>
+                                    </li>
+                                </ul>
+                    </div>
+            </div>
+    </footer>
 
 
 </body>
