@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: darkmagenta !important;
+    background-color: #8b008b !important;
     background: url('/media/main-image-three.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Lora;
@@ -17,7 +17,7 @@ body {
 /* Logo and Navbar*/
 
 .nav-link, p {
-    color: darkmagenta;
+    color: #4dad7d;
     font-family: Merienda;
     font-size: large;
     text-transform: uppercase;
@@ -42,12 +42,12 @@ body {
 
 .shop-now-button {
     background: #f0f8ff;
-    color: #8b008b;
+    color: #4dad7d;
     min-width: 260px;
 }
 
 .btn-magenta {
-    background: #8b008b;
+    background: #4dad7d;
     color: white;
 }
 
@@ -57,14 +57,14 @@ body {
 .btn-magenta:hover,
 .btn-magenta:active,
 .btn-magenta:focus {
-    background: #4dad7d;
+    background: #8b008b;
     color: white;
 }
 
 /* Main welcome area */
 
 .welcome-box {
-    background-color: #8b008b;
+    background-color: #4dad7d;
     color: #fff;
     text-transform: uppercase;
     padding: 10px;
@@ -79,7 +79,7 @@ body {
 .fa, .fas {
     font-size: large;
     font-family: Merienda;
-    color: #8b008b;
+    color: #4dad7d;
 }
 
 
@@ -87,7 +87,7 @@ body {
 
 .footer {
     background-color: aliceblue;
-    color: darkmagenta;
+    color: #4dad7d;
     font-family: Merienda;
     font-size: large;
     text-transform: uppercase;
