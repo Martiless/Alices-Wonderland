@@ -111,7 +111,7 @@
             "name": "Caterpillar",
             "description": "Caterpillar has a passion for grammer frequently over-emphasising certain words.",
             "price": 120,
-            "category": 4.9,
+            "category": 4,
             "rating": 5,
             "image": "caterpillar.png"
         }
@@ -215,7 +215,7 @@
             "name": "Hammer and Pencil Birds",
             "description": "This hard working pair work together to get the job done. They can often to seen building the signs around Wonderland. Please Note: These birds come in pairs",
             "price": 115.00,
-            "category": 1,
+            "category": 4,
             "rating": 4,
             "image": "hammer_and_pencil_birds.jpg"
         }
@@ -228,7 +228,7 @@
             "name": "Glasses Bird",
             "description": "As you can guess, this bird gets its name because of its resemblance to a pair of glasses. The enjoy having a fun with the Mirror bird by allowing humans to wear them like glasses ",
             "price": 105.00,
-            "category": 1,
+            "category": 4,
             "rating": 3.6,
             "image": "glasses_bird.jpg"
         }
@@ -241,7 +241,7 @@
             "name": "Flamingo",
             "description": "As used by the Queen of Hearts in her game of croquet. Complete the set by picking up Hedgehog too",
             "price": 65.00,
-            "category": 1,
+            "category": 4,
             "rating": 3,
             "image": "flamingo.jpg"
         }
@@ -254,7 +254,7 @@
             "name": "Hedgehog",
             "description": "As used by the Queen of Hearts in her game of croquet. Complete the set by picking up Falmingo too",
             "price": 30.00,
-            "category": 1,
+            "category": 4,
             "rating": 3,
             "image": "hedgehog.jpg"
         }
