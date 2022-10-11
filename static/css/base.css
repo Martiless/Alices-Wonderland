@@ -63,6 +63,14 @@ a:hover {
     color: #8b008b;
 }
 
+.heading-font {
+    background-color: aliceblue;
+    color: #4dad7d;
+    font-family: Merienda;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
 /* Banner */
 
@@ -125,6 +133,25 @@ a:hover {
     color: #4dad7d;
 }
 
+/* Products */
+
+.product-card {
+    width: 18rem;
+    padding: 11px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #4dad7d;
+    opacity: 0.4;
+    z-index: -1;
+}
 
 /* Footer */
 
