@@ -9,8 +9,7 @@
             "price": 99.99,
             "category": 1,
             "rating": 4.6,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "dde608e75e13370f56a86653b3e58258.jpg"
+            "image": "tiger_lily.jpg"
         }
     },
     {
@@ -23,8 +22,7 @@
             "price": 350.00,
             "category": 1,
             "rating": 5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "33f35918d5ba3fd33cd4d8fe3cb10e94.jpg"
+            "image": "singing_rose.jpg"
         }
     },
     {
@@ -37,8 +35,7 @@
             "price": 145.99,
             "category": 1,
             "rating": 4.2,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "0f1c00bc86a387f7f3be408183fcb2a6.png"
+            "image": "painted_rose_bush.png"
         }
     },
     {
@@ -51,8 +48,7 @@
             "price": 649.99,
             "category": 5,
             "rating": 6,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "ef38ee8bcfadd0e35a6aa814d3a1b9be.jpg"
+            "image": "unbirthday_party.jpg"
         }
     },
     {
@@ -65,8 +61,7 @@
             "price": 49.99,
             "category": 4,
             "rating": 3.8,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "0dc057e95c5e158eeb292404b3c1bee0.jpg"
+            "image": "horn_duck.jpg"
         }
     },
     {
@@ -79,8 +74,7 @@
             "price": 69.99,
             "category": 4,
             "rating": 3.8,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "b19dc3f57c57ff425e0428793c35ac89.jpg"
+            "image": "accordion_owl.jpg"
         }
     },
     {
@@ -93,8 +87,7 @@
             "price": 30.50,
             "category": 4,
             "rating": 5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "64d19e6a47993028a7106bc940fe68d1.png"
+            "image": "bread_and_butter_fly.png"
         }
     },
     {
@@ -107,8 +100,7 @@
             "price": 105.50,
             "category": 4,
             "rating": 4.9,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "cagebird-3.jpg"
+            "image": "cagebird.jpg"
         }
     },
     {
@@ -121,8 +113,7 @@
             "price": 120,
             "category": 4.9,
             "rating": 5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "22-222353_disney-alice-in-wonderland-characters-clip-art-back.png"
+            "image": "caterpillar.png"
         }
     },
     {
@@ -135,8 +126,7 @@
             "price": 215,
             "category": 4,
             "rating": 5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "f42437f45ff8e7d1f3f1dd396c452d83--wonderland-tattoo-wonderland-party.jpg"
+            "image": "cheshire_cat.jpg"
         }
     },
     {
@@ -149,8 +139,7 @@
             "price": 49.99,
             "category": 4,
             "rating": 3.6,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "2d0b41f14de02f5ea74d7d3eaceee63f.jpg"
+            "image": "curious_oyster.jpg"
         }
     },
     {
@@ -163,8 +152,7 @@
             "price": 64.50,
             "category": 3,
             "rating": 2.5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "115-1151668_alice-in-wonderland-disney-characters-png-transparent-png.png"
+            "image": "talking_doorknob.png"
         }
     },
     {
@@ -177,8 +165,7 @@
             "price": 199.50,
             "category": 6,
             "rating": 5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "356918ce382e055ef9250d728f921d26.jpg"
+            "image": "mad_hatters_hat.jpg"
         }
     },
     {
@@ -191,8 +178,7 @@
             "price": 85.00,
             "category": 2,
             "rating": 4.2,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "81ff6368844c84cb026ed73f4097f68b.jpg"
+            "image": "shrinking_potion.jpg"
         }
     },
     {
@@ -205,8 +191,7 @@
             "price": 135.00,
             "category": 5,
             "rating": 4.5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "c8442c327d045f7b1a238ccf0b6e691d.jpg"
+            "image": "broomdog.jpg"
         }
     },
     {
@@ -219,8 +204,7 @@
             "price": 40.00,
             "category": 1,
             "rating": 4.5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "eca1219efaa7669cfab9fca1b29669f6--disney-images-disney-addict.jpg"
+            "image": "mome_raths.jpg"
         }
     },
     {
@@ -233,8 +217,7 @@
             "price": 115.00,
             "category": 1,
             "rating": 4,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "b4a98111bc3c1d094377f8902c92fdf3.jpg"
+            "image": "hammer_and_pencil_birds.jpg"
         }
     },
     {
@@ -247,8 +230,7 @@
             "price": 105.00,
             "category": 1,
             "rating": 3.6,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "c89d2872e3c357086474a35c68435d00.jpg"
+            "image": "glasses_bird.jpg"
         }
     },
     {
@@ -261,8 +243,7 @@
             "price": 65.00,
             "category": 1,
             "rating": 3,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "97822863909b5ec1778d6e12c6ed64f8--flamingo-party-pink-flamingos.jpg"
+            "image": "flamingo.jpg"
         }
     },
     {
@@ -275,8 +256,7 @@
             "price": 30.00,
             "category": 1,
             "rating": 3,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "a867f9d0ce7c0523a9824a9e17ac4ce0.jpg"
+            "image": "hedgehog.jpg"
         }
     },
     {
@@ -289,8 +269,7 @@
             "price": 30.00,
             "category": 2,
             "rating": 4,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "06218135d29edec9869ac8a09043dc60--alice-in-wonderland--wonderland-party.jpg"
+            "image": "cookies.jpg"
         }
     },
     {
@@ -303,8 +282,7 @@
             "price": 300.00,
             "category": 6,
             "rating": 5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "367-3670211_disney-queen-of-hearts-crown-hd-png-download.png"
+            "image": "queen_hearts_crown.png"
         }
     },
     {
@@ -317,8 +295,7 @@
             "price": 250.00,
             "category": 5,
             "rating": 5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "28-289865_dormouse-alice-in-wonderland-alice-in-wonderland-clipart.png"
+            "image": "tea_march_hare.png"
         }
     },
     {
@@ -331,8 +308,7 @@
             "price": 120.00,
             "category": 3,
             "rating": 4.2,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "imgbin-white-rabbit-pocket-watch-gold-watch-s-white-analog-pocket-watch-illustration-CRF7QinUwQDVM3GdnKPwtRU5S.jpg"
+            "image": "white_rabbit_pocket_watch.jpg"
         }
     },
     {
@@ -345,8 +321,7 @@
             "price": 95.00,
             "category": 3,
             "rating": 3.5,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "2efb664c392b34dedffb0d1b1eca011e.jpg"
+            "image": "umbrella_vultures.jpg"
         }
     },
     {
@@ -359,8 +334,7 @@
             "price": 54.99,
             "category": 3,
             "rating": 4.1,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "1915932a1a9a3000523b9355ee347dd3.png"
+            "image": "road_signs.png"
         }
     },
     {
@@ -368,13 +342,12 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001340127",
-            "name": "Shovel Birds",
+            "name": "Shovel Bird",
             "description": "As the name suggested, this bird is called so because it's beak is in the shape of a shovel. Keep an eye on them as they can often be caight digging up peoples gardens",
             "price": 89.99,
             "category": 4,
             "rating": 4.1,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "46834b930bcc6463e1fbe0f72a9dfcfd.jpg"
+            "image": "shovel_bird.jpg"
         }
     },
     {
@@ -387,8 +360,7 @@
             "price": 99.99,
             "category": 4,
             "rating": 4.6,
-            "image_url": DONT FORGET TO FILL IN,
-            "image": "8c204c5687a94cbe7f9cb6ecbf40017d.jpg"
+            "image": "drum_and_saucer_frogs.jpg"
         }
     }
 ]
