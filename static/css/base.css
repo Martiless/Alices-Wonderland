@@ -163,7 +163,6 @@ a:hover {
     font-size: medium;
 }
 
-
 .overlay {
     height: 100%;
     width: 100%;
@@ -173,6 +172,31 @@ a:hover {
     background-color: #4dad7d;
     opacity: 0.4;
     z-index: -1;
+}
+
+.top-button {
+    height: 30px;
+    width: 109px;
+    background-color: aliceblue;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.top-button:hover
+.button-text:hover {
+    background: #4dad7d;
+    color: white;
+}
+
+.button-text {
+    font-family: 'Merienda';
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+.top-button-link {
+    cursor: pointer;
 }
 
 /* Footer */

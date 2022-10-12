@@ -13,10 +13,13 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3">
+    <div class="container">
+        <div class="col">
+            <hr class="w-20 mb-1 hr-visible">
             <h2 class="heading-font">Products</h2>
             <hr class="w-20 mb-1 hr-visible">
         </div>
+    </div>
     </div>
     <div class="row">
         <div class="product-container col-10 offset-1">
@@ -27,18 +30,18 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 flex-fill align-items-stretch">
                             <div class="card product-card">
                                 <div class="card-img-top">
-                                {% if product.image %}
-                                <a href="{% url 'product_details' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}"
-                                        alt="{{ product.name }}">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'product_details' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
-                                        alt="{{ product.name }}">
-                                </a>
-                                {% endif %}
-                            </div>
+                                    {% if product.image %}
+                                    <a href="{% url 'product_details' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}"
+                                            alt="{{ product.name }}">
+                                    </a>
+                                    {% else %}
+                                    <a href="{% url 'product_details' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                            alt="{{ product.name }}">
+                                    </a>
+                                    {% endif %}
+                                </div>
                                 <div class="card-body">
                                     <p class="mb-0">{{ product.name }}</p>
                                 </div>
@@ -85,5 +88,18 @@
         </div>
     </div>
 </div>
+<div class="top-button rounded">
+    <a class="top-button-link h-100">
+    <p class="button-text">Back to top</p>
+    </a>
+</div>
+{% endblock %}
 
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('.top-button-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
 {% endblock %}

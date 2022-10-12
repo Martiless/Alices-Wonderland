@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr class="w-20 mb-1 hr-visible">
+            <h2 class="heading-font">Your Basket</h2>
+            <hr class="w-20 mb-1 hr-visible">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product Info</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
