@@ -23,19 +23,29 @@
     </div>
     <div class="row">
         <div class="col">
-            <div class="table-responsive rounded">
-                <table class="table table-sm table-borderless">
-                    <thead>
-                        <tr>
-                            <th scope="col">Product Info</th>
-                            <th scope="col"></th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Qty</th>
-                            <th scope="col">Subtotal</th>
-                        </tr>
-                    </thead>
+            {% if bag_items %}
+                    <div class="table-responsive rounded">
+                        <table class="table table-sm table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Product Info</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                            </thead>
+                    </div>
+                {% else %}
+                    <p class="lead mb-5">Your bag is empty.</p>
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>
+                {% endif %}
+               
             </div>
         </div>
-    </div>
 </div>
 {% endblock %}
