@@ -101,15 +101,30 @@ a:hover {
     color: white;
 }
 
+.add-basket-btn {
+    background: #4dad7d;
+    color: white;
+    border: none;
+    margin: 5px;
+    height: 30px;
+    padding: 4px;
+    line-height: normal;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-magenta:hover,
 .btn-magenta:active,
-.btn-magenta:focus {
+.btn-magenta:focus
+.add-basket-btn:hover,
+.add-basket-btn:active,
+.add-basket-btn:focus {
     background: #8b008b;
     color: white;
 }
+
+
 
 /* Main welcome area */
 

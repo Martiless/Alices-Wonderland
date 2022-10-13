@@ -2,6 +2,7 @@ from django.forms import ModelForm
 from django import forms
 from .models import SignUp, ContactUs
 
+
 class SignUpForm(ModelForm):
     """
     This form is connected with the Signup view
@@ -29,7 +30,6 @@ class SignUpForm(ModelForm):
         required=True,
         widget=forms.TextInput(attrs={'placeholder': 'Email Adress'}),
     )
-
 
     class Meta:
         """Defines which model to pull the
@@ -72,7 +72,6 @@ class ContactUsForm(ModelForm):
         required=True,
         widget=forms.TextInput(attrs={'placeholder': 'How can we help?'}),
     )
-
 
     class Meta:
         """Defines which model to pull the

@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.views.generic.edit import FormView
 from .forms import SignUpForm, ContactUsForm
 
-# Create your views here.
 
 class SignUpView(FormView):
     """
@@ -13,11 +12,11 @@ class SignUpView(FormView):
     the user will receive a message to say it was
     successful.
     """
-    template_name = 'newsletter.html'
+    template_name = 'sign_up.html'
     form_class = SignUpForm
 
     def sign_up_view(self, request):
-        return render(request, 'newsletter.html')
+        return render(request, 'sign_up.html')
 
     def post(self, request):
         """
