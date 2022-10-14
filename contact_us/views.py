@@ -16,7 +16,7 @@ class SignUpView(FormView):
     form_class = SignUpForm
 
     def get(self, request):
-        return render(request, 'sign_up.html')
+        return render(request, 'contact_us/sign_up.html')
 
     def post(self, request):
         """
@@ -47,7 +47,7 @@ class ContactUsView(FormView):
     form_class = ContactUsForm
 
     def get(self, request):
-        return render(request, 'contact_us.html')
+        return render(request, 'contact_us/contact_us.html')
 
     def post(self, request):
         """
@@ -62,5 +62,7 @@ class ContactUsView(FormView):
             form.save()
         # Pops up a message to the site visitor when their information
         # has been saved
-        messages.success(request, 'Thank you for contacting us. We will get back to your enquiry as soon as possible')
+        messages.success(
+            request,
+            'Thank you for contacting us. We will get back to your enquiry as soon as possible')
         return redirect('/')
