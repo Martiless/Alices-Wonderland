@@ -15,7 +15,7 @@ class SignUpView(FormView):
     template_name = 'sign_up.html'
     form_class = SignUpForm
 
-    def sign_up_view(self, request):
+    def get(self, request):
         return render(request, 'sign_up.html')
 
     def post(self, request):
@@ -46,7 +46,7 @@ class ContactUsView(FormView):
     template_name = 'contact_us.html'
     form_class = ContactUsForm
 
-    def contact_us_view(self, request):
+    def get(self, request):
         return render(request, 'contact_us.html')
 
     def post(self, request):
