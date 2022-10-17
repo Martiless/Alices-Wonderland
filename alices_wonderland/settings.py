@@ -31,7 +31,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['alices-wonderland.herokuapp.com', 'localhost']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://martiless-aliceswonderl-zul3f5rcoyc.ws-eu71.gitpod.io',
+    'https://alices-wonderland.herokuapp.com'
+]
 
 
 # Application definition

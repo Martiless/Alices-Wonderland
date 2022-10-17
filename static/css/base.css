@@ -124,6 +124,16 @@ a:hover {
     color: white;
 }
 
+.update-link {
+    color: aliceblue !important;
+    font-size: small;
+}
+
+.delete-link {
+    color: firebrick !important;
+    font-size: small;
+}
+
 
 
 /* Main welcome area */
@@ -214,7 +224,9 @@ a:hover {
     text-transform: capitalize;
 }
 
-.top-button-link {
+.top-button-link,
+.update-link,
+.delete-link {
     cursor: pointer;
 }
 
