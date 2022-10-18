@@ -28,6 +28,8 @@ def add_to_basket(request, item_id):
             request, f'You have updated {product.name} in your basket. Quantity is no {basket[item_id]}')
     else:
         basket[item_id] = quantity
+        messages.success(
+            request, f'You have successfully added {product.name} in your basket.')
 
     request.session['basket'] = basket
     return redirect(redirect_url)

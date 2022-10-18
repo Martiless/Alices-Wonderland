@@ -134,6 +134,22 @@ a:hover {
     font-size: small;
 }
 
+/* Toasts */
+
+.custom-toast {
+    overflow: visible;
+    overflow: visible;
+    font-family: 'Merienda';
+    background: #4dad7d;
+    color: aliceblue !important;
+}
+
+.message-container {
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    z-index: 999999999999;
+}
 
 
 /* Main welcome area */

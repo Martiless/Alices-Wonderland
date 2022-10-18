@@ -2,11 +2,14 @@ from django.db import models
 
 
 class Category(models.Model):
+    """
+    The model used for displaying
+    the categories
+    """
 
     class Meta:
         verbose_name_plural = 'Categories'
 
-        
     name = models.CharField(max_length=300)
     friendly_name = models.CharField(max_length=300, null=True, blank=True)
 
@@ -18,6 +21,10 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """
+    The model used for displaying
+    the products
+    """
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=150, null=True, blank=True)
     name = models.CharField(max_length=300)
@@ -28,3 +35,5 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
