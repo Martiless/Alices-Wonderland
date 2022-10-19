@@ -19,7 +19,7 @@
                 <hr class="w-20 mb-1 hr-visible">
                 <form method="POST">
                     {% csrf_token %}
-                    {{form.as_p}}
+                    {{ form.as_p }}
 
                     <button id="submit-button" class="btn shop-now-button">Send Message</button>
                 </form>

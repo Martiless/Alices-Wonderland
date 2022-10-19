@@ -5,14 +5,12 @@ from .models import SignUp, ContactUs
 class SignUpAdmin(admin.ModelAdmin):
     """This adds the Sign up list
     to the database in the admin site"""
-    
+
     list_display = (
         'first_name',
         'last_name',
         'email_address'
     )
-
-
 
 
 class ContactUsAdmin(admin.ModelAdmin):

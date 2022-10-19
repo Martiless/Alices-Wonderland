@@ -1,10 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, HttpResponseRedirect
 from django.contrib import messages
-from django.views.generic.edit import FormView
 from .forms import SignUpForm, ContactUsForm
 
 
-class SignUpView(FormView):
+def get_sign_up_form(request):
     """
     Renders the Sign up form page in the browser
     Using the SignUpForm created in the forms.py file
@@ -12,57 +11,45 @@ class SignUpView(FormView):
     the user will receive a message to say it was
     successful.
     """
-    template_name = 'sign_up.html'
-    form_class = SignUpForm
-
-    def get(self, request):
-        return render(request, 'contact_us/sign_up.html')
-
-    def post(self, request):
-        """
-        Uses the SignUpForm from forms.py
-        Checks if all the infromation in valid
-        and then saves it to the database.
-        Once the information is saved the site
-        visitor will receive a pop up message
-        """
-        form = SignUpForm(data=request.POST)
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = SignUpForm(request.POST)
+        # check whether it's valid:
         if form.is_valid():
-            form.save()
-        # Pops up a message to the site visitor when their information
-        # has been saved
-        messages.success(request, 'Thank you for signing up to our newsletter')
-        return redirect('/')
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            messages.success(request, 'Thank you for signing up to our Newsletter!')
+            return HttpResponseRedirect('/')
+
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = SignUpForm()
+
+    return render(request, 'contact_us/sign_up.html', {'form': form})
 
 
-class ContactUsView(FormView):
+def get_contact_us_form(request):
     """
-    Renders the Contact form page in the browser
-    Using the ContactUsForm created in the forms.py file
-    When the Contact form is completed and submitted
+    Renders the Sign up form page in the browser
+    Using the SignUpForm created in the forms.py file
+    When the Sign up form is completed and submitted
     the user will receive a message to say it was
     successful.
     """
-    template_name = 'contact_us.html'
-    form_class = ContactUsForm
-
-    def get(self, request):
-        return render(request, 'contact_us/contact_us.html')
-
-    def post(self, request):
-        """
-        Uses the ContactUsForm from forms.py
-        Checks if all the infromation in valid
-        and then saves it to the database.
-        Once the information is saved the site
-        visitor will receive a pop up message
-        """
-        form = ContactUsForm(data=request.POST)
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = ContactUsForm(request.POST)
+        # check whether it's valid:
         if form.is_valid():
-            form.save()
-        # Pops up a message to the site visitor when their information
-        # has been saved
-        messages.success(
-            request,
-            'Thank you for contacting us. We will get back to your enquiry as soon as possible')
-        return redirect('/')
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            messages.success(request, 'Thank you for contacting us. We will get back to you as soon as possible!')
+            return HttpResponseRedirect('/')
+
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = ContactUsForm()
+
+    return render(request, 'contact_us/contact_us.html', {'form': form})
