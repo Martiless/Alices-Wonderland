@@ -28,13 +28,13 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details my-5">
-                <p class=" text-right product-name">{{ product.name}}</p>
-                <p class="text-right product-desription">{{ product.description }}</p>
-                <p class="text-right"><strong>€{{ product.price}}</strong></p>
+                <p class=" text-right product-name par">{{ product.name}}</p>
+                <p class="text-right product-desription par">{{ product.description }}</p>
+                <p class="text-right par"><strong>€{{ product.price}}</strong></p>
                 {% if product.rating %}
-                <p><small class="text-right text-muted">{{ product.rating }}/5</small></p>
+                <p><small class="text-right text-muted par">{{ product.rating }}/5</small></p>
                 {% else %}
-                <p><small class="text-right text-muted">No Rating!</small></p>
+                <p><small class="text-right text-muted par">No Rating!</small></p>
                 {% endif %}
                 <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                     {% csrf_token %}

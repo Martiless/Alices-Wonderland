@@ -33,6 +33,13 @@ a:hover {
     text-transform: capitalize;
 }
 
+.par {
+    color: #4dad7d;
+    font-family: Merienda;
+    font-size: large;
+    text-transform: uppercase;
+}
+
 /* Logo and Navbar*/
 
 .nav-link {
@@ -41,14 +48,6 @@ a:hover {
     font-size: large;
     text-transform: uppercase;
 }
-
-.nav-par {
-    color: #4dad7d;
-    font-family: Merienda;
-    font-size: large;
-    text-transform: uppercase;
-}
-
 
 .main-logo-text {
    font-size: 50px;   
