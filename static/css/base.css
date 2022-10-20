@@ -18,6 +18,11 @@ a {
     color: #4dad7d;
 }
 
+p {
+    color: aliceblue;
+    font-family: Merienda;
+}
+
 a:hover {
     color: #8b008b;
 }
@@ -30,7 +35,14 @@ a:hover {
 
 /* Logo and Navbar*/
 
-.nav-link, p {
+.nav-link {
+    color: #4dad7d;
+    font-family: Merienda;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.nav-par {
     color: #4dad7d;
     font-family: Merienda;
     font-size: large;
@@ -289,4 +301,5 @@ a:hover {
 .footer-par {
     font-family: Lora;
     font-size: medium;
+    color: #4dad7d;
 }

@@ -85,7 +85,7 @@
                         <a class="nav-link" href="{% url 'about_me' %}">
                             <div class="text-center">
                                 <div><i class="fa fa-person-dress" aria-hidden="true"></i></div>
-                                <p class="my-0">About Me</p>
+                                <p class="my-0 nav-par">About Me</p>
                             </div>
                         </a>
                     </li>
@@ -94,7 +94,7 @@
                             aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fa fa-circle-user" aria-hidden="true"></i></div>
-                                <p class="my-0">My Account</p>
+                                <p class="my-0 nav-par">My Account</p>
                             </div>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="user-options">
@@ -114,7 +114,7 @@
                         <a class="text-info font-weight-bold nav-link" href="{% url 'basket' %}">
                             <div class="text-center">
                                 <div><i class="fa fa-basket-shopping" aria-hidden="true"></i></div>
-                                <p class="my-0">
+                                <p class="my-0 nav-par">
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
                                     {% else %}
