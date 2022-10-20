@@ -100,13 +100,13 @@
                         <div class="dropdown-menu" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item">Manage Store</a>
+                            <a href="" class="dropdown-item" rel="nofollow">Manage Store</a>
                             {% endif %}
-                            <a href="" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="" class="dropdown-item" rel="nofollow">My Profile</a>
+                            <a href="{% url 'account_logout' %}"  rel="nofollow" class="dropdown-item">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" rel="nofollow" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" rel="nofollow" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>

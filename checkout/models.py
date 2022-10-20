@@ -12,7 +12,7 @@ class Order(models.Model):
     """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=120, null=False, blank=False)
-    email_adress = models.EmailField(max_length=350, null=False, blank=False)
+    email_address = models.EmailField(max_length=350, null=False, blank=False)
     phone = models.CharField(max_length=20, null=False, blank=False)
     country = models.CharField(max_length=80, null=True, blank=False)
     postcode = models.CharField(max_length=20, null=True, blank=True)
