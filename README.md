@@ -91,20 +91,23 @@ Each story was then moved from 'To Do' to 'In Progress' to  'Done' as the projec
 ***
 
 #### New User:  
-* As a new user,  
-* As a new user, 
-* As a new user, 
-* As a new user, 
-* As a new user, 
-* As a new user,  
-* As a new user, 
+* As a new user, I want to view all products   
+* As a new user, I want to view products by price
+* As a new user, I want to view products by category
+* As a new user, I want to add products to my basket
+* As a new user, I want to edit product quantities from my basket
+* As a new user, I want to delete products straight from my basket
+* As a new user, I want to securly checkout using a credit card
+* As a new user, I want to create a profile 
+* As a new user, I want to sign up for a newsletter
+* As a new user, I want to contact the company with any queries
+
 
 #### Returning User:
-* As a returning user, 
-* As a returning user, 
-* As a returning user,  
-* As a returning user, 
-* As a returning user, 
+* As a returning user, I want to be updated on new products via newsletter
+* As a returning user, I want to contact the company with any queries
+* As a returning user, I want to leave reviews on products I have purchased
+* As a returning user, I want to edit my profile
 
 ## Development Planes:
 To create a website that is comprehensive and informative for a user, as a developer you need to look at all aspects of the website and how someone who visits your website will use it. You have to consider all the user stories that have been outlined in the above sections.  
@@ -127,10 +130,21 @@ The strategy principal looks at user needs, as well product/service objectives. 
 * 
 
 #### The website needs to allow users to:  
-* 
+* View products by price, category or rating
+* Add products to a basket
+* Edit product quantities and delete products straight from the basket
+* Make secure payments for their products via credit card
+* Create a user profile
+* Contact the store with enquiries
+* Sign up for a newsletter
+* Visit the stores social media accounts straight from the site 
 
-#### The website needs to allow the restaurant owner to:  
-*    
+#### The website needs to allow the store owner to:  
+* Add, edit and delete products straight from the frontend site 
+* Collect information from order forms
+* Collect email address for the purpose of monthly marketing newsletter
+* Approve of product reviews to unsure they are genuine customer reviews and not spam
+* 
 
 ## Scope:  
 
@@ -156,7 +170,7 @@ The information above was then used to create a structure for the website. Below
 
 
 ## Skeleton:
-[Wireframes]() were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
+[Wireframes](/documents/WIREFRAMES.md) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
 
 ## Surface:
 [Please see the live site here]()  
@@ -187,6 +201,7 @@ The information above was then used to create a structure for the website. Below
  
 
 ### Images:
+The images for this project were mostly taken from Pinterest.
  
 
 
@@ -194,12 +209,7 @@ The information above was then used to create a structure for the website. Below
 [Back to top](#Alices-Wondeland)  
 
 ## Marketing:
-
-### Facebook:
-
-### Instagram:
-
-### SEO :
+For marketing report please click [here](/documents/MARKETING.md)
 
 
 ## Features:
@@ -220,9 +230,9 @@ The navigation bar consisted of links to a Book A Table page, a Newsletter page,
 <details>
 <summary>Footer Information:</summary>
 
-![Opening Hours & Social Media]()
+![Social Media]()
 </details> 
-Each page also contains a footer element that consists of the restaurant's social media accounts (Facebook, Twitter and Instagram), as well as the opening hours for the restaurant and copyright information. 
+Each page also contains a footer element that consists of the store's social media accounts, as well as usefull links and copyright information. 
 
 &nbsp;
 
@@ -272,7 +282,7 @@ We are looking to see if we have met all the goals we set out.
 ***
 
 ## Testing:
-Testing information can be viewed [here]()
+Testing information can be viewed [here](/documents/TESTING.md)
 
 ***
 
@@ -333,7 +343,7 @@ For this project, the following technologies were used.
 
 * HTML:
       - No errors were found when passed through the [W3C Validator tool]()
-      - To view screenshots of validations please click [here]()
+      - To view screenshots of validations please click [here](/documents/VALIDATION.md)
 
 * CSS:
       - No errors were found when passed through the [W3C Validator tool]() 
@@ -354,7 +364,7 @@ For this project, the following technologies were used.
 ***
 
 ## Deployment:
-Deployment information can be found [here]()
+Deployment information can be found [here](/documents/DEPLOYMENT.md)
 
 ***
 
