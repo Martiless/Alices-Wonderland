@@ -13,19 +13,17 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-    <div class="container">
-        <div class="col">
-            <hr class="w-20 mb-1 hr-visible">
-            <h2 class="heading-font">Products</h2>
-            <hr class="w-20 mb-1 hr-visible">
+        <div class="container">
+            <div class="col">
+                <hr class="w-20 mb-1 hr-visible">
+                <h2 class="heading-font">Products</h2>
+                <hr class="w-20 mb-1 hr-visible">
+            </div>
         </div>
-    </div>
     </div>
     <div class="row">
         <div class="product-container col-10 offset-1">
-            <div class="row mt-1 mb-2">
-                <div class="row">
-                    <div class="card-group">
+                    <div class="row card-group">
                         {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 flex-fill align-items-stretch">
                             <div class="card product-card">
@@ -83,14 +81,12 @@
                         {% endif %}
                         {% endfor %}
                     </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
 <div class="top-button rounded">
     <a class="top-button-link h-100">
-    <p class="button-text par">Back to top</p>
+        <p class="button-text par">Back to top</p>
     </a>
 </div>
 {% endblock %}
