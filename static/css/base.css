@@ -283,6 +283,35 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Basket */
+
+.basket-elements {
+    color: aliceblue;
+    font-family: Merienda;
+    text-transform: capitalize;
+}
+
+
+/* Checkout Form */
+
+.checkout-form {
+    color: darkmagenta;
+    font-family: Merienda;
+    font-weight: bold;
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+.checkout-form-links {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.checkout-form-links:hover {
+    color: #8b008b;
+    text-decoration: underline;
+}
+
 /* Footer */
 
 .footer {

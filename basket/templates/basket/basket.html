@@ -2,13 +2,6 @@
 {% load static %}
 {% load basket_tools %}
 
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
 
 
 {% block content %}
@@ -29,11 +22,11 @@
                 <table class="table table-sm table-borderless">
                     <thead class="text-white">
                         <tr>
-                            <th scope="col">Product Info</th>
-                            <th scope="col"></th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Qty</th>
-                            <th scope="col">Subtotal</th>
+                            <th scope="col" class="basket-elements">Product Info</th>
+                            <th scope="col" class="basket-elements"></th>
+                            <th scope="col" class="basket-elements">Price</th>
+                            <th scope="col" class="basket-elements">Qty</th>
+                            <th scope="col" class="basket-elements">Subtotal</th>
                         </tr>
                     </thead>
 
@@ -87,9 +80,9 @@
                     {% endfor %}
                     <tr>
                         <td colspan="5" class="pt-5 text-right">
-                            <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                            <h6>Shipping: ${{ shipping|floatformat:2 }}</h6>
-                            <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                            <h6 class="basket-elements"><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+                            <h6 class="basket-elements">Shipping: ${{ shipping|floatformat:2 }}</h6>
+                            <h4 class="mt-4 basket-elements"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                             {% if free_shipping_delta > 0 %}
                             <p class="mb-1" style="font-weight: bold; color: darkmagenta;">
                                 Spend <strong>${{ free_shipping_delta }}</strong> more to get free shipping!
@@ -102,7 +95,7 @@
                             <a href="{% url 'products' %}" class="btn shop-now-button">
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn shop-now-button">
+                            <a href="{% url 'checkout' %}" class="btn shop-now-button">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fa fa-lock"></i>

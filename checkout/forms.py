@@ -1,7 +1,7 @@
 from django import forms
 from .models import Order
 
-class OrderForm(form.ModelForm):
+class OrderForm(forms.ModelForm):
     """
     Order form to be used in
     the checkout html page
