@@ -119,15 +119,16 @@ The strategy principal looks at user needs, as well product/service objectives. 
 * Existing User  
 
 ### Demographic:
-* 
+* Aged between 25 to 60
+* Working individuals with disposable income
 
 ### Psychographic:
-* 
 
 #### Lifestyle:
-* 
-#### Values:
-* 
+* Collectors
+* Planet enthusiast
+* Exotic Animal enthusiast
+
 
 #### The website needs to allow users to:  
 * View products by price, category or rating
@@ -179,25 +180,12 @@ The information above was then used to create a structure for the website. Below
 [Back to top](#Alices-Wonderland)  
 
 ### Color: 
-
-<details>
-<summary>Color Checker 1</summary>
-
-![Color Checker 1]()
-</details>
-
-&nbsp;
-
-<details>
-<summary>Color Checker 2</summary>
-
-![Color Checker 2]()
-</details>
+The green and purple colors used throughout this site were taken directly from the backgroud image using a color picker. White was then used to enhace them and make them pop on hte screen. 
 
 
 
 ### Font:
-
+Fonts used for this site were Merienda and Lora, both of which have been imported from [Google Fonts](https://fonts.google.com/)
  
 
 ### Images:
@@ -223,7 +211,8 @@ There are several features on this site to help users get the most out of their 
 ![Header and Nav Bar]()
 </details>
 Each page has a Header and Navigation bar section, located at the top of the page. 
-The navigation bar consisted of links to a Book A Table page, a Newsletter page, a Login page, a Register page and for authorised users a My Bookings, as well as a Home button that brings the user back to the landing page. The landing page can also be reached by clicking on the restaurant logo.
+The navigation bar consisted of links to a link to the About section, the users Account section, the users Shopping Basket and a search bar. As well as the shop logo with when click will bring the user back to the home page. 
+It also contains a navigation bar that has the categories the user can use to shop the products. 
 
 &nbsp;
 
@@ -237,7 +226,83 @@ Each page also contains a footer element that consists of the store's social med
 &nbsp;
 
 ### Home page:
-The *Home* page contains the header and footer as mentioned above  
+The *Home* page contains the header and footer as mentioned above. It also contains a main box that welcomes the user to the store and a link to shop, which brings the user to the *All Products* page  
+
+<details>
+<summary>Home Page:</summary>
+
+![Home Page]()
+</details> 
+
+&nbsp;
+
+### About Me page:  
+
+<details>
+<summary>About Me page:</summary>
+
+![About Me page]()
+</details> 
+
+&nbsp;
+
+### All Products page:  
+
+<details>
+<summary>All Products page:</summary>
+
+![All Products page]()
+</details> 
+
+&nbsp;
+
+### Product Detail page:  
+
+<details>
+<summary>Product Detail page:</summary>
+
+![Product Detail page]()
+</details> 
+
+&nbsp;
+
+### Basket: 
+
+<details>
+<summary>Basket:</summary>
+
+![Basket]()
+</details> 
+
+&nbsp;
+
+### Checkout:
+
+<details>
+<summary>Checkout:</summary>
+
+![Checkout]()
+</details> 
+
+&nbsp;
+
+### Contact us page:
+
+<details>
+<summary>Contact us page:</summary>
+
+![Contact us page]()
+</details> 
+
+&nbsp;
+
+### Newsletter page:
+
+<details>
+<summary>Newsletter page:</summary>
+
+![Newsletter page]()
+</details> 
 
 &nbsp;
 
@@ -252,32 +317,36 @@ The *Home* page contains the header and footer as mentioned above
 This section is to look back at the User stories we established during the strategy phase of the project. 
 We are looking to see if we have met all the goals we set out. 
 #### New User: 
-* As a new user,   
-**Met on the Book a Table Page**
-* As a new user,    
-**Met on the Book a Table Page**
-* As a new user,    
-**Met on the Book form on the Book a Table page**
-* As a new user,   
-**Met on the Book form on the Book a Table page**
-* As a new user,   
-**Met on the Menus page, users can view three menus for the restaurant**
-* As a new user,   
-**Met on the My Bookings page once the user is logged in**
-* As a new user,   
-**Met on the Newsletter page**
+* As a new user, I want to view all product  
+**Met on the All Products Page**
+* * As a new user, I want to view products by price 
+**Met on the All Products Page**
+* * As a new user, I want to view products by category  
+**Met on the All Products Page**
+*  As a new user, I want to add products to my basket
+**Met on the Product Details Page**
+* As a new user, I want to edit product quantities from my basket   
+**Met on the Basket page, users can edit products using the quantity bar and the edit button**
+* As a new user, I want to delete products straight from my basket  
+**Met on the Basket page, users can delete products using the delete button**
+* As a new user, I want to securly checkout using a credit card 
+**Met on the Checkout page, users can fill out the checkout form, add credit card details and make a secure payment using Stripe**
+* As a new user, I want to create a profile
+**Met on the Register page**
+* As a new user, I want to sign up for a newsletter
+**Met on the Newsletter page, users can fill out the formto sign up for a monthly newsletter**
+* As a new user, I want to contact the company with any queries
+**Met on the Contact Us page, users can fill out the form to send queries to the store**
 
 #### Returning User:
-* As a returning user,   
-**Met on the Log in page**
-* As a returning user,    
-**Met on the Book a Table Page**
-* As a returning user,    
-**Met on the My Bookings page once the user is logged in**
-* As a returning user,    
-**Met on the My Bookings page once the user is logged in**
-* As a returning user,    
-**Met on the Menus page**
+* As a returning user, I want to be updated on new products via newsletter   
+**Met on the Newsletter page, users can fill out the formto sign up for a monthly newsletter**
+* As a returning user, I want to contact the company with any queries   
+**Met on the Contact Us page, users can fill out the form to send queries to the store**
+* As a returning user, I want to leave reviews on products I have purchased   
+**Met on the Product Details page, once the user is logged in**
+* As a returning user, I want to edit my profile  
+**Met on the Profile page, once the user is logged in**
 
 ***
 
@@ -309,7 +378,7 @@ For this project, the following technologies were used.
 * Bootstrap
 
 #### Google Font
-* Google Font was used to import the chosen font for this project Lora.
+* Google Font was used to import the chosen fonts for this project.
 
 #### Font Awesome
 * Font Awesome was used on each page of the website to provide icons for UX purposes.  
