@@ -101,7 +101,7 @@
                     <li class="list-inline-item">
                         <a class="nav-link" href="{% url 'about_me' %}">
                             <div class="text-center">
-                                <div><i class="fa fa-person-dress" aria-hidden="true"></i></div>
+                                <div><i class="far fa-id-badge" aria-hidden="true"></i></div>
                                 <p class="my-0 par">About Me</p>
                             </div>
                         </a>
@@ -110,7 +110,7 @@
                         <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fa fa-circle-user" aria-hidden="true"></i></div>
+                                <div><i class="fas fa-users" aria-hidden="true"></i></div>
                                 <p class="my-0 par">My Account</p>
                             </div>
                         </a>
@@ -130,7 +130,7 @@
                     <li class="list-inline-item">
                         <a class="text-info font-weight-bold nav-link" href="{% url 'basket' %}">
                             <div class="text-center">
-                                <div><i class="fa fa-basket-shopping" aria-hidden="true"></i></div>
+                                <div><i class="fas fa-shopping-basket" aria-hidden="true"></i></div>
                                 <p class="my-0 par">
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
