@@ -15,7 +15,7 @@ var style = {
         }
     },
     invalid: {
-        color: 'irebrick',
+        color: 'firebrick',
         iconColor: '#dc3545'
     }
 };
