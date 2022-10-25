@@ -91,6 +91,7 @@ a:hover {
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 0.25rem;
 }
 
 /* Banner */
@@ -291,7 +292,6 @@ a:hover {
     text-transform: capitalize;
 }
 
-
 /* Checkout Form */
 
 .checkout-form {
@@ -300,6 +300,7 @@ a:hover {
     font-weight: bold;
     font-size: medium;
     text-transform: capitalize;
+    border-radius: 0.25rem;
 }
 
 .checkout-form-links {
@@ -310,6 +311,34 @@ a:hover {
 .checkout-form-links:hover {
     color: #8b008b;
     text-decoration: underline;
+}
+
+/* Stripe Elements*/
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
 }
 
 /* Footer */
