@@ -40,28 +40,37 @@ def checkout(request):
                         order_line_item = OrderLineItems(
                             order=order,
                             product=product,
-                            quantity=item_data
+                            quantity=item_data,
                         )
-                    order_line_item.save()
+                        order_line_item.save()
+                    else:
+                        for size, quantity in item_data['items_by_size'].items():
+                            order_line_item = OrderLineItems(
+                                order=order,
+                                product=product,
+                                quantity=quantity,
+                                product_size=size,
+                            )
+                            order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your basket doesn't exist in our database"
-                        "Please contact us via the Contact us Page")
+                        "One of the products in your bag wasn't found in our database. "
+                        "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_basket'))
             
             request.session['save_info'] = 'save_info' in request.POST
-            return redirect(reverse('checkout_success', args=[order, order_number]))
+            return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, "There was an error in your form. \
                 Please check all the information is correct!")
-                 
+
     else:
         basket = request.session.get('basket', {})
         if not basket:
             messages.error(request, 'There is nothing in your basket!')
-            return redirect(reverse('index'))
+            return redirect(reverse('products'))
 
         current_basket = basket_contents(request)
         total = current_basket['grand_total']
@@ -95,9 +104,6 @@ def checkout_success(request, order_number):
 
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
-    messages.success(request, f'Your order was successfully processed! \
-        Your order number is {order_number}. \
-        A confirmation email is on the way to {order.email}. ')
 
     if 'basket' in request.session:
         del request.session['basket']

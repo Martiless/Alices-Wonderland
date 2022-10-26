@@ -308,10 +308,18 @@ a:hover {
     text-decoration: underline;
 }
 
+.thankyou-link {
+    color: aliceblue !important;
+    font-size: inherit;
+    text-decoration: underline;
+}
+
 .checkout-form-links:hover {
     color: #8b008b;
     text-decoration: underline;
 }
+
+
 
 /* Stripe Elements*/
 .StripeElement,

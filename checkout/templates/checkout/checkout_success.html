@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr class="w-20 mb-1 hr-visible">
+            <h2 class="heading-font">Your Order was successful</h2>
+            <hr class="w-20 mb-1 hr-visible">
+        </div>
+    </div>
+    <div class="row welcome-box">
+        <div class="row h-100">
+            <div class="col-12 col-md-12 col-sm-12 my-auto">
+                <h1 class="text-capitalize">Thank you for your order!</h1>
+                <hr class="w-20 mb-1 hr-visible">
+                <h3 class="text-capitalize">Your order number is <strong>{{order.order_number}}</strong><br>
+                A confrimation email will be sent to <i class="text-lowercase" style="
+                    text-decoration: underline">{{order.email_address}}</i> shortly</h3>
+                    <hr class="w-20 mb-1 hr-visible">
+                <h4 class="text-capitalize">If you have any issues please contact us <a href="{% url 'contact_us' %}" class="thankyou-link">here</a></h4>
+                <hr class="w-20 mb-1 hr-visible">
+            </div>
+            <div class="col">
+                <h5>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase rounded-0 ">Keep Shopping!</a>
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
