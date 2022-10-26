@@ -341,6 +341,22 @@ a:hover {
     color: #aab7c4;
 }
 
+.error-message {
+    color: firebrick !important;
+    font-size: small;
+    font-family: 'Merienda';
+    font-weight: bolder;
+    text-align: left;
+}
+
+.error-icon {
+    color: firebrick !important;
+    font-size: small;
+    font-family: 'Merienda';
+    font-weight: bolder;
+    text-align: left;
+}
+
 /* Footer */
 
 .footer {
