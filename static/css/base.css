@@ -94,6 +94,14 @@ a:hover {
     border-radius: 0.25rem;
 }
 
+.custom-toggler.navbar-toggler {
+    border-color: #4dad7d;
+  } 
+
+.custom-toggler.navbar-toggler-icon {
+    background-image: url("/media/menu_icon.png");
+}
+
 /* Banner */
 
 .notification-banner {
