@@ -33,6 +33,7 @@ def cache_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
+
 def checkout(request):
     """
     Checkout View

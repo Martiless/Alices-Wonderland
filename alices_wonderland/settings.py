@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import sys
 import os
 import dj_database_url
 
@@ -29,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['alices-wonderland.herokuapp.com', 'localhost']
 
@@ -134,19 +133,20 @@ WSGI_APPLICATION = 'alices_wonderland.wsgi.application'
 # If code is being tested then Django will use the first database
 # Otherwise the Database defined in env.py will be used
 
-if 'test' in sys.argv:
+if 'DATABASE_URL' in os.environ:
+    print("Loading Postgres...")
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+else:
     # Database for testing
+    print("Loading sqlite3...")
     DATABASES = {
      'default': {
           'ENGINE': 'django.db.backends.sqlite3',
           'NAME': BASE_DIR / 'db.sqlite3',
       }
     }
-
-else:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-        }
 
 
 # Password validation

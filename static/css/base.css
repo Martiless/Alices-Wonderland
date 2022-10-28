@@ -328,6 +328,17 @@ a:hover {
     text-decoration: underline;
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
+
 /* Stripe Elements*/
 .StripeElement,
 .stripe-style-input {
