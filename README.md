@@ -138,6 +138,7 @@ The strategy principal looks at user needs, as well product/service objectives. 
 * Create a user profile
 * Contact the store with enquiries
 * Sign up for a newsletter
+* Leave reviews for products they bought
 * Visit the stores social media accounts straight from the site 
 
 #### The website needs to allow the store owner to:  
@@ -145,7 +146,7 @@ The strategy principal looks at user needs, as well product/service objectives. 
 * Collect information from order forms
 * Collect email address for the purpose of monthly marketing newsletter
 * Approve of product reviews to unsure they are genuine customer reviews and not spam
-* 
+
 
 ## Scope:  
 
@@ -356,7 +357,8 @@ Testing information can be viewed [here](/documents/TESTING.md)
 ***
 
 ## Bugs:
-1.   
+1. After importing Django Countries, I edited the Country field in the checkout model so that a dropdown menu appeared on the checkout form for the country. When I tried to migrate the changes I was getting a "DataError". If I ran a planned migration there were no error occuring but as soon as I removed plan the error would appear. 
+      * After a session with the CI tutors it was noted that I had a number of test orders in the database that were done under the old model (writting in the actual Country) and the changes were making it so the Country Field used the official ISO 3166-1 list of countries which has a default max lenght of 2. Once these test orders were deleted from the database the migration was able to be completed. 
 
 ***
 
