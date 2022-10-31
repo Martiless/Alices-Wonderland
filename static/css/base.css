@@ -119,6 +119,7 @@ a:hover {
 
 .shop-now-button {
     background: #f0f8ff;
+    margin: 3px;
     color: #4dad7d;
     min-width: 260px;
 }

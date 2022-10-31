@@ -7,25 +7,36 @@
 
 
 {% block content %}
-<h1>{% trans "Confirm E-mail Address" %}</h1>
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-12 col-md-12 col-sm-12 my-auto welcome-box">
 
-{% if confirmation %}
+            <h1 style="font-family: 'Merienda'; text-transform: capitalize;">{% trans "Confirm E-mail Address" %}</h1>
 
-{% user_display confirmation.email_address.user as user_display %}
+            {% if confirmation %}
 
-<p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}</p>
+            {% user_display confirmation.email_address.user as user_display %}
 
-<form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
-{% csrf_token %}
-    <button type="submit">{% trans 'Confirm' %}</button>
-</form>
+            <p style="text-transform: none; font-size: larger;">{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a
+                    href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user
+                {{ user_display }}.{% endblocktrans %}</p>
 
-{% else %}
+            <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
+                {% csrf_token %}
+                <button class="primaryAction btn shop-now-button button-text" type="submit">{% trans 'Confirm' %}</button>
+            </form>
 
-{% url 'account_email' as email_url %}
+            {% else %}
 
-<p>{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
+            {% url 'account_email' as email_url %}
 
-{% endif %}
+            <p style="text-transform: none; font-size: larger;">{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a
+                    href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
+
+            {% endif %}
+
+        </div>
+    </div>
+</div>
 
 {% endblock %}

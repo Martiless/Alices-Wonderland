@@ -10,12 +10,12 @@
   <div class="row h-100">
     <div class="col-12 col-md-12 col-sm-12 my-auto welcome-box">
 
-      <h1>{% trans "Sign In" %}</h1>
+      <h1 style="font-family: 'Merienda'; text-transform: capitalize;">{% trans "Sign In" %}</h1>
 
       {% get_providers as socialaccount_providers %}
 
       {% if socialaccount_providers %}
-      <p style="color: aliceblue">{% blocktrans with site.name as site_name %}Please sign in with one
+      <p style="text-transform: none; font-size: larger;">{% blocktrans with site.name as site_name %}Please sign in with one
         of your existing third party accounts. Or, <a href="{{ signup_url }}" class="signup-link">sign up</a>
         for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
@@ -32,7 +32,7 @@
       {% include "socialaccount/snippets/login_extra.html" %}
 
       {% else %}
-      <p style="color: aliceblue">{% blocktrans %}If you have not created an account yet, then please
+      <p style="text-transform: none; font-size: larger;">{% blocktrans %}If you have not created an account yet, then please
         <a href="{{ signup_url }}" class="signup-link">sign up</a> first.{% endblocktrans %}</p>
       {% endif %}
 
