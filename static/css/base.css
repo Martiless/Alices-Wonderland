@@ -21,6 +21,7 @@ a {
 p {
     color: aliceblue;
     font-family: Merienda;
+    text-transform: none;
 }
 
 a:hover {
@@ -37,7 +38,7 @@ a:hover {
     color: #4dad7d;
     font-family: Merienda;
     font-size: large;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 /* Logo and Navbar*/
@@ -279,7 +280,6 @@ a:hover {
 .about-alice {
     font-family: 'Lora';
     font-size: medium;
-    text-transform: capitalize !important;
 }
 
 /* Links */
@@ -337,6 +337,16 @@ select option {
 select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
+}
+
+/* User Profile */
+
+.user-profile-form {
+    font-family: Merienda;
+    font-weight: bold;
+    font-size: medium;
+    text-transform: none;
+    border-radius: 0.25rem;
 }
 
 

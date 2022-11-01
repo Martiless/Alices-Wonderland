@@ -10,9 +10,21 @@
             <hr class="w-20 mb-1 hr-visible">
             <h2 class="heading-font">My Profile</h2>
             <hr class="w-20 mb-1 hr-visible">
-
+        </div>
+    </div>
+    <div class="row welcome-box">
+        <div class="col-12 col-lg order-lg-last mb-5">
+            <p >User Shipping information:</p>
+            <form action="{% url 'user_profile' %}" method="POST" id="user-profile-form">
+                {% csrf_token %}
+                {{form|crispy  }}
+                <button class="btn shop-now-button rounded">Update Information</button>
+            </form>
+        </div>
+        <div class="col-12 col-lg order-lg-last mb-5">
+            <p>Order History:</p>
+            {{ orders }}
         </div>
     </div>
 </div>
-{{ profile }}
 {% endblock %}
