@@ -24,6 +24,10 @@ p {
     text-transform: none;
 }
 
+h4 {
+    font-family: Merienda;
+}
+
 a:hover {
     color: #8b008b;
 }
@@ -347,6 +351,36 @@ select option[value=""] {
     font-size: medium;
     text-transform: none;
     border-radius: 0.25rem;
+}
+
+.order-history {
+    max-height: 416px;
+    overflow-y: auto;
+    color: aliceblue;
+    text-transform: none;
+    font-family: 'Merienda';
+}
+
+.order-form-details {
+    font-family: 'Merienda';
+    text-transform: none;
+    font-size: x-large;
+    text-align: left !important;
+    margin-left: 20px;
+}
+
+.order-form-elements {
+    font-size: medium;
+    text-align: left;
+    font-family: 'Lora';
+    margin-left: 20px;
+}
+
+.order-confirmation-par {
+    font-size: medium;
+    text-align: right;
+    font-family: 'Lora';
+    margin-right: 20px;
 }
 
 

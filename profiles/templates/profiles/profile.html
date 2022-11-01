@@ -14,15 +14,47 @@
     </div>
     <div class="row welcome-box">
         <div class="col-12 col-lg order-lg-last mb-5">
-            <p >User Shipping information:</p>
-            <form action="{% url 'user_profile' %}" method="POST" id="user-profile-form">
+            <p>Shipping information:</p>
+            <form action="{% url 'user_profile' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
-                {{form|crispy  }}
+                {{ form|crispy  }}
                 <button class="btn shop-now-button rounded">Update Information</button>
             </form>
         </div>
         <div class="col-12 col-lg order-lg-last mb-5">
             <p>Order History:</p>
+            <div class="table-responsive">
+                <table class="order-history table table-sm">
+                    <thead>
+                        <th>Order Number</th>
+                        <th>Order Date</th>
+                        <th>Order Details</th>
+                        <th>Order Total</th>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'order_history' order.order_number %}"
+                                title="{{ order.order_number }}">
+                            </a> 
+                            </td>
+                            <td> {{order.date}} </td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    {% for item in order.lineitems.all %}
+                                    <li class="small">
+                                        {{ item.product.name }} x {{ item.quantity }}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                            <td> €{{order.grand_total}} </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
             {{ orders }}
         </div>
     </div>

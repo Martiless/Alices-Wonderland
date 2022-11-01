@@ -1,12 +1,14 @@
+import json
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
 from django.http import HttpResponse
 from django.views.decorators.http import require_POST
 import stripe
-import json
 from basket.contexts import basket_contents
 from products.models import Product
+from profiles.forms import UserProfileForm
+from profiles.models import UserProfile
 from .forms import OrderForm
 from .models import Order, OrderLineItems
 
@@ -19,7 +21,7 @@ def cache_checkout_data(request):
     details box checked
     """
     try:
-        pid = require_POST.get('client_secret').split('_secret')[0]
+        pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(pid, metadata={
             'basket': json.dumps(request.session.get('basket', {})),
@@ -31,7 +33,6 @@ def cache_checkout_data(request):
         messages.error(request, 'Sorry, we were unable to process \
             your payment. Please try again later!')
         return HttpResponse(content=e, status=400)
-
 
 
 def checkout(request):
@@ -121,12 +122,31 @@ def checkout_success(request, order_number):
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
+    if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+        order.user_profile = profile
+        order.save()
+
+        if save_info:
+            profile_data = {
+                'users_phone': order.phone,
+                'users_country': order.country,
+                'users_postcode': order.postcode,
+                'users_town_or_city': order.town_or_city,
+                'users_street_address1': order.street_address1,
+                'users_street_address2': order.street_address2,
+                'users_county': order.county,
+            }
+            user_profile_form = UserProfileForm(profile_data, instance=profile)
+            if user_profile_form.is_valid():
+                user_profile_form.save()
+
     if 'basket' in request.session:
         del request.session['basket']
 
     template = 'checkout/checkout_success.html'
     context = {
-        'order': order
+        'order': order,
     }
 
     return render(request, template, context)

@@ -65,21 +65,21 @@ form.addEventListener('submit', function(ev) {
                         line1: $.trim(form.street_address1.value),
                         line2: $.trim(form.street_address2.value),
                         city: $.trim(form.town_or_city.value),
-                        county: $.trim(form.county.value),
+                        state: $.trim(form.county.value),
                         country: $.trim(form.country.value),
                     }
                 }
             },
-            shipping_details: {
+            shipping: {
                 name: $.trim(form.full_name.value),
                 phone: $.trim(form.phone.value),
                 address: {
                     line1: $.trim(form.street_address1.value),
                     line2: $.trim(form.street_address2.value),
                     city: $.trim(form.town_or_city.value),
-                    county: $.trim(form.county.value),
+                    state: $.trim(form.county.value),
                     country: $.trim(form.country.value),
-                    postcode: $.trim(form.postcode.value),
+                    postal_code: $.trim(form.postcode.value),
                 }
             },
         }).then(function(result) {

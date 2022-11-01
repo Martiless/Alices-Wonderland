@@ -17,21 +17,200 @@
             <div class="col-12 col-md-12 col-sm-12 my-auto">
                 <h1 class="text-capitalize">Thank you for your order!</h1>
                 <hr class="w-20 mb-1 hr-visible">
-                <h3 class="text-capitalize">Your order number is <strong>{{order.order_number}}</strong><br>
-                A confrimation email will be sent to <i class="text-lowercase" style="
-                    text-decoration: underline">{{order.email_address}}</i> shortly</h3>
-                    <hr class="w-20 mb-1 hr-visible">
-                <h4 class="text-capitalize">If you have any issues please contact us <a href="{% url 'contact_us' %}" class="thankyou-link">here</a></h4>
+                <h4 style="text-transform: none;">Your order number is <strong>{{order.order_number}}</strong><br>
+                    A confrimation email will be sent to <i class="text-lowercase" style="
+                    text-decoration: underline">{{order.email_address}}</i> shortly</h4>
                 <hr class="w-20 mb-1 hr-visible">
             </div>
-            <div class="col">
-                <h5>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase rounded ">Keep Shopping!</a>
-                </h5>
+            <div class="row">
+                <div class="col-12 col-md-12 col-sm-12 my-auto">
+                    <div class="order-confirmation">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="order-form-details">Order Info:</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Order Number:</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.order_number }}</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Order Date:</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.date }}</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <hr class="w-20 mb-1 hr-visible">
+                                <h3 class="order-form-details">Order Details:</h3>
+                            </div>
+                        </div>
+
+                        {% for item in order.lineitems.all %}
+                        <div class="row">
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="order-form-elements">{{ item.product }} x {{ item.quantity }} @
+                                    ${{ item.product.price }} each</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                        <div class="row">
+                            <div class="col">
+                                <hr class="w-20 mb-1 hr-visible">
+                                <h3 class="order-form-details">Shipping Info:</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Full Name</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.full_name }}</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Address 1</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.street_address1 }}</p>
+                            </div>
+                        </div>
+
+                        {% if order.street_address2 %}
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Address 2</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.street_address1 }}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if order.county %}
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">County</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.county }}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Town or City</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.town_or_city }}</p>
+                            </div>
+                        </div>
+
+                        {% if order.postcode %}
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Post Code</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.postcode }}</p>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Country</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.country }}</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Phone Number</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.phone_number }}</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <hr class="w-20 mb-1 hr-visible">
+                                <h3 class="order-form-details">Billing Info:</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Order Total</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.order_total }}</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Shipping</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.shipping_cost }}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 order-form-elements">Grand Total</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0 order-confirmation-par">{{ order.grand_total }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class= "col-12 col-md-12 col-sm-12 my-auto">
+                    <hr class="w-20 mb-1 hr-visible">
+                    <h4 class="text-capitalize">If you have any issues please contact us <a
+                            href="{% url 'contact_us' %}" class="thankyou-link">here</a></h4>
+                    <hr class="w-20 mb-1 hr-visible">
+                </div>
+
+                <div class="col-12 col-lg-7 text-right">
+                    {% if from_profile %}
+                    <a href="{% url 'user_profile' %}" class="btn shop-now-button rounded">
+                        <span class="icon mr-2">
+                            <i class="fas fa-angle-left"></i>
+                        </span>
+                        <span class="text-uppercase">Back to Profile</span>
+                    </a>
+                    {% else %}
+                    <a href="{% url 'products' %}" class="btn shop-now-button rounded">
+                        <span class="icon mr-2">
+                            <i class="fas fa-gifts"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping!</span>
+                    </a>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-{% endblock %}
+    {% endblock %}
