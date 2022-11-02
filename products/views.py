@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
+from .forms import ManageProductsForm
 
 
 def all_products(request):
@@ -42,13 +43,13 @@ def all_products(request):
             if not query:
                 messages.error(request, "Please enter a search term!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(
                 name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
-   
+
     context = {
         'products': products,
         'search_term': query,
@@ -72,3 +73,24 @@ def product_details(request, product_id):
     }
 
     return render(request, 'products/product_details.html', context)
+
+
+def add_product(request):
+    """ Adding products to the store """
+    if request.method == 'POST':
+        form = ManageProductsForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'New products has been successfully added!')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Product was not added. Please check form and try again!')
+    else:
+        form = ManageProductsForm()
+
+    template = 'products/add_products.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
