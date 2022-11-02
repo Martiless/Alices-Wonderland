@@ -7,8 +7,8 @@ class UserProfileForm(forms.ModelForm):
     User Profile form to
     update user information
     """
-    class Meta: 
-        model = UserProfile()
+    class Meta:
+        model = UserProfile
         exclude = ('user',)
 
 

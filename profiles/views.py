@@ -15,7 +15,7 @@ def user_profile(request):
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
-            form.save
+            form.save()
             messages.success(request, 'Your profile has been successfully updated!')
 
     form = UserProfileForm(instance=profile)
@@ -24,6 +24,7 @@ def user_profile(request):
     context = {
         'form': form,
         'order': order,
+        'on_profile_page': True
     }
 
     return render(request, template, context)
