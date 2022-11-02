@@ -1,12 +1,10 @@
-# Code for this function was taken mostly
-# from the Stripe documentation
-
+import stripe
 from django.conf import settings
 from django.http import HttpResponse
 from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 from checkout.webhook_handler import WebhookHandler
-import stripe
+
 
 
 @require_POST

@@ -1,0 +1,27 @@
+Hi {{ order.full_name }},
+
+Thank you for ordering from Alices Wonderland.
+
+Just to let you know that your order number {{ order.order_number }} has been received and will be processed shortly.
+
+Order Number: {{ order.order_number }} ({{ order.date }})
+
+Order Total: €{{ order.order_total }}
+Shipping Cost: €{{ order.shipping_cost }}
+Grand Total: €{{ order.grand_total }}
+
+For full details of your order please log into your profile.
+
+Shipping Details:
+{{ order.street_address1 }},
+{{ order.street_address2 }},
+{{ order.town_or_city }},
+{{ order.county }},
+{{ order.country }}
+
+We will contact you on {{ order.phone }} if there are any issues.
+
+In the meantime, if you have any questions please feel free to contact us at {{ contact_email }}
+
+Kind Regards,
+Alice 

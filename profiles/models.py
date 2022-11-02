@@ -19,10 +19,10 @@ class UserProfile(models.Model):
     users_county = models.CharField(max_length=80, null=True, blank=True)
     users_postcode = models.CharField(max_length=20, null=True, blank=True)
     users_country = CountryField(blank_label='Country',  max_length=200, null=True, blank=True)
-    
 
     def __str__(self):
         return self.user.username
+
 
 @receiver(post_save, sender=User)
 def create_or_update_profile(sender, instance, created, **kwargs):
