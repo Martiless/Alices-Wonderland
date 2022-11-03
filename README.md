@@ -357,8 +357,72 @@ Testing information can be viewed [here](/documents/TESTING.md)
 ***
 
 ## Bugs:
-1. After importing Django Countries, I edited the Country field in the checkout model so that a dropdown menu appeared on the checkout form for the country. When I tried to migrate the changes I was getting a "DataError". If I ran a planned migration there were no error occuring but as soon as I removed plan the error would appear. 
-      * After a session with the CI tutors it was noted that I had a number of test orders in the database that were done under the old model (writting in the actual Country) and the changes were making it so the Country Field used the official ISO 3166-1 list of countries which has a default max lenght of 2. Once these test orders were deleted from the database the migration was able to be completed. 
+### DataError:
+After importing Django Countries, I edited the Country field in the checkout model so that a dropdown menu appeared on the checkout form for the country. When I tried to migrate the changes I was getting a "DataError". If I ran a planned migration there were no error occuring but as soon as I removed plan the error would appear. 
+* After a session with the CI tutors it was noted that I had a number of test orders in the database that were done under the old model (writting in the actual Country) and the changes were making it so the Country Field used the official ISO 3166-1 list of countries which has a default max lenght of 2. Once these test orders were deleted from the database the migration was able to be completed. 
+
+&nbsp;
+
+### Card Details:
+Card details not appeating on checkout:
+* When I set up the checkout eveything was working correctly except the card details box. This was not appearing at all. After rewatching the walk through video but everything seemed in order. After troubleshooting and chatting with some people in Slack and Stackoverflow it was suggested in the stripe_elements.js file to use the stripe public key in the "var stripe" instead of using an environment variable called stripePublicKey. Once I added the full key into the JS file that card details element appeared on the checkout page. 
+<details>
+<summary>Card Error:</summary>
+
+![Display Error](/documents/images/readme_images/card_details_bug.png)
+</details> 
+
+<details>
+<summary>Original JS file:</summary>
+
+![Display Error](/documents/images/readme_images/js.png)
+</details> 
+
+<details>
+<summary>Updated JS file:</summary>
+
+![Display Error](/documents/images/readme_images/updated_js.png)
+</details>
+
+&nbsp;
+
+### Display Error:
+If there were less than 4 images on a line they would display on top of eachother:
+* After speaking with my mentor it was found that the basic layout of my products template was not structured correctly. After removing an extra row that was in the content block fixed this problem straight away. 
+<details>
+<summary>Display Error:</summary>
+
+![Display Error](/documents/images/readme_images/display_error.png)
+</details> 
+
+&nbsp;
+
+### Edit Product Error:
+When creating the add, edit and delete product functions for the site admin there was an Attribute Error occuring when I tried to test the 'Edit Product' functionality.
+* After chatting with people on Slack it was suggested that I needed a for loop in the edit_products template to iterate through the each field of the form. I tried this but I was still getting the Attribute Error. 
+* I then went to ask the CI tutors. It was their suggestion to try... 
+<details>
+<summary>Edit Product Error 1:</summary>
+
+![Display Error](/documents/images/readme_images/edit_product.png)
+</details> 
+
+<details>
+<summary>Edit Product Error 2:</summary>
+
+![Display Error](/documents/images/readme_images/edit_product_2.png)
+</details> 
+
+<details>
+<summary>Edit Product Error 3:</summary>
+
+![Display Error](/documents/images/readme_images/edit_product_3.png)
+</details> 
+
+&nbsp;
+
+### Confirmation Email Error:
+Confirmation emails where not being sent when an order was created. 
 
 ***
 

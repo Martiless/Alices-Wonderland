@@ -81,7 +81,7 @@ def add_product(request):
     """ Adding products to the store """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have the authority to access this page!')
-        return redirect(reverse('index'))
+        return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = ManageProductsForm(request.POST, request.FILES)
@@ -107,7 +107,7 @@ def edit_product(request, product_id):
     """ Editing Products on the store """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have the authority to access this page!')
-        return redirect(reverse('index'))
+        return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
@@ -136,8 +136,8 @@ def delete_product(request, product_id):
     """Delete products from the store """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have the authority to access this page!')
-        return redirect(reverse('index'))
-        
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, f'You have deleted {product.name}')
