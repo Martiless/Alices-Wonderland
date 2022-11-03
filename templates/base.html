@@ -117,7 +117,7 @@
                         <div class="dropdown-menu" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item" rel="nofollow">Manage Store</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item" rel="nofollow">Manage Store</a>
                             {% endif %}
                             <a href="{% url 'user_profile' %}" class="dropdown-item" rel="nofollow">My Profile</a>
                             <a href="{% url 'account_logout' %}"  rel="nofollow" class="dropdown-item">Logout</a>

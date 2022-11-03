@@ -187,8 +187,14 @@ a:hover {
     text-transform: capitalize;
 }
 
+.edit-product-link {
+    color: #4dad7d !important;
+    font-size: small;
+}
+
 .top-button-link,
 .update-link,
+.edit-product-link 
 .delete-link {
     cursor: pointer;
 }
