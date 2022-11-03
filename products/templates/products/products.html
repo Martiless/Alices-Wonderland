@@ -54,7 +54,7 @@
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
                                     {% if request.user.is_superuser %}
-                                    <div>
+                                    <div class="mt-4">
                                         <a href="{% url 'edit_product' product.id %}" class="edit-product-link float-left font-weight-bold">Edit</a>
                                         <a href="{% url 'delete_product' product.id %}" class="delete-link float-right font-weight-bold">Delete</a>
                                     </div>

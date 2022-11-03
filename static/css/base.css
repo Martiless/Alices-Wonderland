@@ -199,6 +199,11 @@ a:hover {
     cursor: pointer;
 }
 
+.form-group, a {
+    color: aliceblue;
+    padding-right: 5px;
+}
+
 /* Toasts */
 
 .custom-toast {

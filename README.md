@@ -400,7 +400,7 @@ If there were less than 4 images on a line they would display on top of eachothe
 ### Edit Product Error:
 When creating the add, edit and delete product functions for the site admin there was an Attribute Error occuring when I tried to test the 'Edit Product' functionality.
 * After chatting with people on Slack it was suggested that I needed a for loop in the edit_products template to iterate through the each field of the form. I tried this but I was still getting the Attribute Error. 
-* I then went to ask the CI tutors. It was their suggestion to try... 
+* I then went to ask the CI tutors. After a few different attempts to solve the issue, it was discovered that I was missing one of the asterisks in my forms.py file. Once this second asterisk was added the page and the form loaded correctly.  
 <details>
 <summary>Edit Product Error 1:</summary>
 
@@ -419,6 +419,11 @@ When creating the add, edit and delete product functions for the site admin ther
 ![Display Error](/documents/images/readme_images/edit_product_3.png)
 </details> 
 
+<details>
+<summary>Edit Product Error 4:</summary>
+
+![Display Error](/documents/images/readme_images/edit_product_4.png)
+</details> 
 &nbsp;
 
 ### Confirmation Email Error:
