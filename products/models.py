@@ -47,18 +47,15 @@ class Review(models.Model):
     add reviews for products on
     the site
     """
-    reviewer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="review")
+    reviewer = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     review_title = models.CharField(max_length=150)
     content = models.TextField()
     created = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    helpful = models.ManyToManyField(User, related_name='review_like', blank=True)
 
     class Meta:
         ordering = ["created"]
 
     def __str__(self):
         return self.review_title
-
-    def number_of_thumbsups(self):
-        return self.helpful.count()

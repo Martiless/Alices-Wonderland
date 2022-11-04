@@ -144,14 +144,8 @@ a:hover {
 }
 
 .shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-magenta:hover,
-.btn-magenta:active,
-.btn-magenta:focus
-.add-basket-btn:hover,
-.add-basket-btn:active,
-.add-basket-btn:focus {
+.add-basket-btn:hover {
     background: #8b008b;
     color: white;
 }
@@ -287,6 +281,14 @@ a:hover {
     background-color: #4dad7d;
     opacity: 0.4;
     z-index: -1;
+}
+
+.custom-modal {
+    font-family: Merienda;
+    color: #4dad7d;
+    text-transform: none;
+    font-size: large;
+    font-weight: 300;
 }
 
 /* About me */

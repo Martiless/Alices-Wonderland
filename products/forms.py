@@ -1,5 +1,5 @@
 from django import forms
-from .models import Product, Category
+from .models import Product, Category, Review
 
 
 class ManageProductsForm(forms.ModelForm):
@@ -21,3 +21,15 @@ class ManageProductsForm(forms.ModelForm):
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'user-profile-form'
+
+
+class ReviewForm(forms.ModelForm):
+    """
+    The form that allows login
+    users to add reviews for
+    products on the site
+    """
+
+    class Meta:
+        model = Review
+        fields = ('review_title', 'content')

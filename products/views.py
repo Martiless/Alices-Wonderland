@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
-from .forms import ManageProductsForm
+from .forms import ManageProductsForm, ReviewForm
 
 
 def all_products(request):
@@ -68,12 +68,15 @@ def product_details(request, product_id):
     """
 
     product = get_object_or_404(Product, pk=product_id)
+    template = 'products/product_details.html'
+    form = ReviewForm
 
     context = {
         'product': product,
+        'form': form,
     }
 
-    return render(request, 'products/product_details.html', context)
+    return render(request, template, context)
 
 
 @login_required
@@ -142,3 +145,24 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, f'You have deleted {product.name}')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_review(request):
+    """ Adding reviews to products """
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Thank you for your review. It is currently under review!')
+            return redirect(reverse('home'))
+    else:
+        form = ReviewForm()
+
+    template = 'products/add_review.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
