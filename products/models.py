@@ -1,4 +1,8 @@
 from django.db import models
+from django.contrib.auth.models import User
+
+# The choices for the status of reviews
+STATUS = ((0, "Waiting Approval"), (1, "Approved"))
 
 
 class Category(models.Model):
@@ -37,3 +41,24 @@ class Product(models.Model):
         return self.name
 
 
+class Review(models.Model):
+    """
+    Allows authorised users to
+    add reviews for products on
+    the site
+    """
+    reviewer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="review")
+    review_title = models.CharField(max_length=150)
+    content = models.TextField()
+    created = models.DateTimeField(auto_now=True)
+    status = models.IntegerField(choices=STATUS, default=0)
+    helpful = models.ManyToManyField(User, related_name='review_like', blank=True)
+
+    class Meta:
+        ordering = ["created"]
+
+    def __str__(self):
+        return self.review_title
+
+    def number_of_thumbsups(self):
+        return self.helpful.count()
