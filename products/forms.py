@@ -33,3 +33,21 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ('review_title', 'content')
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        placeholders = {
+            'review_title': 'Title',
+            'content': 'Review',
+        }
+
+        for field in self.fields:
+            if self.fields[field].required:
+                placeholder = f'{placeholders[field]} *'
+            else:
+                placeholder = placeholders[field]
+            self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].widget.attrs['class'] = 'basket-elements'
+            self.fields[field].label = False
+
+

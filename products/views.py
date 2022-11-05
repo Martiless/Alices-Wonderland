@@ -152,11 +152,11 @@ def add_review(request):
     """ Adding reviews to products """
 
     if request.method == 'POST':
-        form = ReviewForm(request.POST, request.FILES)
+        form = ReviewForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, 'Thank you for your review. It is currently under review!')
-            return redirect(reverse('home'))
+            return redirect(reverse('product_details', args=[product.id]))
     else:
         form = ReviewForm()
 
