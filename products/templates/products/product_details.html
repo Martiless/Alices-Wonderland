@@ -83,16 +83,12 @@
                 </form>
             </div>
         </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-12 col-sm-12 my-auto">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="welcome-box my-5">
                 <div>
                     <h3>Reviews:</h3>
                     <div class="card-body">
-                        {% for review in review %}
+                        {% for reviews in review %}
                         <div>
                             <p class="font-weight-bold">
                                 {{ review.review_title }}
@@ -100,6 +96,7 @@
                                     {{ review.created }} by {{ review.reviewer }}
                                 </span>
                             </p>
+                            <p>
                             {{ review.content | linebreaks }}
                             </p>
                         </div>
@@ -148,6 +145,7 @@
         </div>
     </div>
 </div>
+
 
 
 
