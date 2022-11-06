@@ -32,6 +32,12 @@ a:hover {
     color: #8b008b;
 }
 
+img {
+    width: 100% !important;
+    height: 570px !important;
+    object-fit: scale-down !important;
+}
+
 .form-details {
     color: darkmagenta;
     font-weight: bold;
@@ -258,9 +264,11 @@ a:hover {
 
 .product-details {
     background-color: aliceblue;
-    padding: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
+
 .product-name {
     font-family: 'Merienda';
     font-weight: bolder;

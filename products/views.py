@@ -69,8 +69,7 @@ def product_details(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     template = 'products/product_details.html'
-    form = ReviewForm
-
+    form = ReviewForm()
     context = {
         'product': product,
         'form': form,

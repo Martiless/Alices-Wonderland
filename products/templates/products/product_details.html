@@ -29,7 +29,7 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details my-5">
                 <p class=" text-right product-name par">{{ product.name}}</p>
-                <p class="text-right product-desription par">{{ product.description }}</p>
+                <p class="text-justify product-desription par">{{ product.description }}</p>
                 <p class="text-right par"><strong>€{{ product.price}}</strong></p>
                 {% if product.rating %}
                 <p><small class="text-right text-muted par">{{ product.rating }}/5</small></p>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-12" style="text-align: center;">
                         <a href="{% url 'products' %}" class="add-basket-btn rounded text-uppercase mt-4">
                             <span>Keep Browsing</span>
                         </a>
@@ -84,7 +84,7 @@
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="welcome-box my-5">
+            <div class="welcome-box my-5 rounded-0">
                 <div>
                     <h3>Reviews:</h3>
                     <div class="card-body">
