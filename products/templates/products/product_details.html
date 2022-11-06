@@ -104,12 +104,18 @@
                     </div>
                 </div>
                 <div>
+                    {% if reviewed %}
+                    <div class="alert alert-success" role="alert">
+                        Your review is awaiting verification!
+                    </div>
+                    {% else %}
                     {% if request.user.is_authenticated %}
                     <button href="{% url 'add_review' %}" type="button"
                         class="shop-now-button btn btn-lg text-uppercase rounded" data-toggle="modal"
                         data-target="#productReview">
                         <span>Add Product Review</span>
                     </button>
+                    {% endif %}
                     {% endif %}
                 </div>
                 <!-- Product Review Modal -->
@@ -119,8 +125,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="reviewModal" style="color: #4dad7d; font-family: Merienda;">
-                                    Add
-                                    Review
+                                    Add Review
                                 </h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -135,8 +140,8 @@
                             <div class="modal-footer">
                                 <button type="button" class="add-basket-btn rounded text-uppercase mt-4"
                                     data-dismiss="modal">Close</button>
-                                <input type="submit" class="add-basket-btn rounded text-uppercase mt-4">Submit
-                                Review</input>
+                                <button type="submit" class="add-basket-btn rounded text-uppercase mt-4">Submit
+                                Review</button>
                             </div>
                         </div>
                     </div>

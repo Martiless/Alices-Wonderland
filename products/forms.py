@@ -32,12 +32,13 @@ class ReviewForm(forms.ModelForm):
 
     class Meta:
         model = Review
-        fields = ('review_title', 'content')
+        fields = ('review_title', 'product', 'content',)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         placeholders = {
             'review_title': 'Title',
+            'product': 'Product',
             'content': 'Review',
         }
 

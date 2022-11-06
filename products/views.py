@@ -147,21 +147,27 @@ def delete_product(request, product_id):
 
 
 @login_required
-def add_review(request):
+def add_review(request, product_id):
     """ Adding reviews to products """
 
-    if request.method == 'POST':
-        form = ReviewForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Thank you for your review. It is currently under review!')
-            return redirect(reverse('product_details', args=[product.id]))
+    product = get_object_or_404(Product, pk=product_id)
+
+    form = ReviewForm(data=request.POST)
+    if form.is_valid():
+        form.instance.email = request.user.email
+        form.instance.name = request.user.username
+        review = form.save(commit=False)
+        review.product = product
+        form.save()
+        messages.success(request, 'Thank you for your review. It is currently under review!')
+        return redirect(reverse('product_details', args=[product.id]))
     else:
         form = ReviewForm()
 
     template = 'products/add_review.html'
     context = {
         'form': form,
+        'reviewed': True,
     }
 
     return render(request, template, context)
