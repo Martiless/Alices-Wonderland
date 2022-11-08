@@ -75,7 +75,6 @@ def product_details(request, product_id):
         form = ReviewForm(request.POST, request.FILES)
         if form.is_valid():
             review = form.save(commit=False)
-            review.user = request.user
             review.product = product
             form.save()
             messages.success(request, 'Thank you for your review. It is currently under review!')

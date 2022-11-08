@@ -145,14 +145,15 @@
                 <form method="POST" action="{% url 'product_details' product.id %}">
                     {% csrf_token %}
                     {{ form | crispy }}
+                    <div class="modal-footer">
+                        <button type="button" class="add-basket-btn rounded text-uppercase mt-4"
+                            data-dismiss="modal">Close</button>
+                        <button type="submit" class="add-basket-btn rounded text-uppercase mt-4">Submit
+                            Review</button>
+                    </div>
                 </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="add-basket-btn rounded text-uppercase mt-4"
-                    data-dismiss="modal">Close</button>
-                <button type="submit" class="add-basket-btn rounded text-uppercase mt-4" form="modal-details">Submit
-                    Review</button>
-            </div>
+            
         </div>
     </div>
 </div>
