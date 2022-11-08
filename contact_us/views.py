@@ -12,17 +12,11 @@ def get_sign_up_form(request):
     successful.
     """
     if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
         form = SignUpForm(request.POST)
-        # check whether it's valid:
         if form.is_valid():
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
             messages.success(request, 'Thank you for signing up to our Newsletter!')
             return HttpResponseRedirect('/')
 
-    # if a GET (or any other method) we'll create a blank form
     else:
         form = SignUpForm()
 
@@ -42,13 +36,8 @@ def get_contact_us_form(request):
         form = ContactUsForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
             messages.success(request, 'Thank you for contacting us. We will get back to you as soon as possible!')
             return HttpResponseRedirect('/')
-
-    # if a GET (or any other method) we'll create a blank form
     else:
         form = ContactUsForm()
 

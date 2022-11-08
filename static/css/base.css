@@ -32,7 +32,7 @@ a:hover {
     color: #8b008b;
 }
 
-img {
+.product-details-img {
     width: 100% !important;
     height: 570px !important;
     object-fit: scale-down !important;
@@ -299,6 +299,11 @@ img {
     font-weight: 300;
 }
 
+.modal-elements {
+    color: #5A5A5A;
+    font-family: Merienda;
+    text-transform: none;
+}
 /* About me */
 
 .about-alice {

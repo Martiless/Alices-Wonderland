@@ -70,6 +70,19 @@ def product_details(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     template = 'products/product_details.html'
     form = ReviewForm()
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.user = request.user
+            review.product = product
+            form.save()
+            messages.success(request, 'Thank you for your review. It is currently under review!')
+            return redirect(reverse('product_details', args=[product.id]))
+        else:
+            form = ReviewForm()
+
     context = {
         'product': product,
         'form': form,
@@ -154,9 +167,8 @@ def add_review(request, product_id):
 
     form = ReviewForm(data=request.POST)
     if form.is_valid():
-        form.instance.email = request.user.email
-        form.instance.name = request.user.username
         review = form.save(commit=False)
+        review.user = request.user
         review.product = product
         form.save()
         messages.success(request, 'Thank you for your review. It is currently under review!')
