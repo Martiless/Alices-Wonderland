@@ -33,6 +33,7 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ('review_title', 'product', 'content',)
+        exculde = ('user', )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

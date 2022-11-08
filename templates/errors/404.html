@@ -10,23 +10,24 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container main-page-container">
-        <div class="row h-100">
-            <div class="col-12 col-md-12 col-sm-12 my-auto welcome-box">
-                <div class="image-container my-5">
-                    <a href="{{ MEDIA_URL }}404_image.jpg" target="_blank">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}404_image.jpg" alt="Alice falling down the rabbit hole">
-                    </a>
-                </div>
-                <hr class="w-20 mb-1 hr-visible">
-                <h1>404 Error!</h1>
-              <h2>Oops! Looks like you have fallen down a rabbit hole!</h2>
-              <h3>The page you are looking for does not exsist</h3>
-                <hr class="w-20 mb-1 hr-visible">
-              <a href=" url 'products' ">Click here to find your way back home!</a>
+<div class="container main-page-container">
+    <div class="row h-100">
+        <div class="col-12 col-md-12 col-sm-12 my-auto welcome-box">
+            <hr class="w-20 mb-1 hr-visible">
+            <h1>404 Error!</h1>
+            <h2>Oops! Looks like you have fallen down a rabbit hole!</h2>
+            <div class="image-container my-5">
+                <a href="{{ MEDIA_URL }}404_image.jpg" target="_blank">
+                    <img src="{{ MEDIA_URL }}404_image.jpg" alt="Alice falling down the rabbit hole" style="
+                    width: 250px;">
+                </a>
             </div>
+            <h3>The page you are looking for does not exist</h3>
+            <hr class="w-20 mb-1 hr-visible">
+            <a href=" url 'products' ">Click here to find your way back home!</a>
         </div>
     </div>
+</div>
 </div>
 
 
