@@ -102,7 +102,7 @@
                         <a class="nav-link" href="{% url 'about_me' %}">
                             <div class="text-center">
                                 <div><i class="far fa-id-badge" aria-hidden="true"></i></div>
-                                <p class="my-0 par">About Me</p>
+                                <span class="my-0 par">About Me</span>
                             </div>
                         </a>
                     </li>
@@ -111,7 +111,7 @@
                             aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-users" aria-hidden="true"></i></div>
-                                <p class="my-0 par">My Account</p>
+                                <span class="my-0 par">My Account</span>
                             </div>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="user-options">
@@ -131,14 +131,14 @@
                         <a class="text-info font-weight-bold nav-link" href="{% url 'basket' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-basket" aria-hidden="true"></i></div>
-                                <p class="my-0 par">
+                                <span class="my-0 par">
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
                                     {% else %}
                                     €0.00
                                     {% endif %}
 
-                                </p>
+                                </span>
                             </div>
                         </a>
                     </li>
@@ -209,7 +209,7 @@
                         </a>
                     </li>
                     <li class="inline-block">
-                        <a target="_blank" href="">
+                        <a target="_blank" href="{% url 'privacy_policy' %}">
                             <p class="footer-par">Privacy Policy</p>
                         </a>
                     </li>
