@@ -5,7 +5,7 @@ This website is designed for a fictional shop based in Wonderland.
 This website has been created as the Fifth Milestone project for Code Institute's Full Stack Software Development Diploma. It was built using a Full-Stack Toolkit, with the addition of E-commerce Applications such as Stripe. GitPod was used for writing the code for this website, as well as committing and pushing to GitHub. GitHub was then used to store the project after it had been pushed from GitPod. Once all the code had been written, Heroku was then used to deploy the website. 
 
 
-### View the live website [here]()
+### View the live website [here](https://alices-wonderland.herokuapp.com/)
 ![Live Website]()
 
 ***
@@ -42,51 +42,28 @@ This website has been created as the Fifth Milestone project for Code Institute'
 ## Site Goals:
 
 The goals for this site are as follows:
-* 
+* Allow users to view products
+* Allow users to add products to a basket
+* Allow users to update or delete products from basket
+* Allow users to make payments using Stripe
+* Allow users to create a user profile
+* Allow users to contact the store with any queries 
+* Allow users to sign up for a monthly newsletter
+* Allow authorised users to leave product reviews
+* Allow store owner to collect user data to complete orders
+* Allow store owners to approve user reviews 
+* Allow the store owner to collect a database for marketing purposes in the form of a monthly newsletter
 
 ## UX:
 
 ### User stories:
 To demonstrate the Agile approach that was used for this project, GitHub issues were used and a Kanban board was used to record all the user stories. 
-The user stories were categorised using different labels, i.e MO - *Must have*, SO - *Should Have* and CO - *Could have*.
-Each story was then moved from 'To Do' to 'In Progress' to  'Done' as the project progressed, with CO stories moved to a future feature board. 
+The user stories were categorised using different labels, i.e MO - *Must have*, SO - *Should Have*, CO - *Could have* and W - *Won't have*.
+Each story was then moved from 'To Do' to 'In Progress' to  'Done' as the project progressed, with some CO stories and WO stories moved to a future feature board.  
+
 
 #### Project Progression: 
-<details>
-<summary>Progression One</summary>
-
-![Progression One]()
-</details>
-
-<details>
-<summary>Progression Two</summary>
-
-![Progression Two]()
-</details>
-
-<details>
-<summary>Progression Three</summary>
-
-![Progression Three]()
-</details>
-
-<details>
-<summary>Progression Four</summary>
-
-![Progression Four]()
-</details>
-
-<details>
-<summary>Progression Five</summary>
-
-![Progression Five]()
-</details>
-
-<details>
-<summary>Progression Six</summary>
-
-![Progression Six]()
-</details>
+To view to progression of this project please view my project document by clicking [here](https://docs.google.com/spreadsheets/d/1tVnHzRfP0hPory2GUCfKkiKpfxxGOuGtRkeizTLchqo/edit?usp=sharing)
 
 ***
 
@@ -153,11 +130,21 @@ The strategy principal looks at user needs, as well product/service objectives. 
 With the structure in place, it was then time to move onto the scope plane. This was all about developing website requirements based on the goals set out in the strategy plane. These requirements are broken down into two categories. 
 ### Content Requirements:
 1. The user will be looking for:
-      * 
+      * A list of products that can be purchased 
+      * Information about the store owner
+      * Links to the stores social media accounts
 
 ### Functionality Requirements:
 1. The user will be able to:
-      * 
+      * Browse all the stores products
+      * Add products to a basket
+      * Edit their basket
+      * Complete orders using Stripe
+      * Create a user account
+      * Update information on user account
+      * Leave reviews on products
+      * Contact the store with enquires 
+      * Sign up for a newsletter
 
 ***
 
@@ -175,7 +162,7 @@ The information above was then used to create a structure for the website. Below
 [Wireframes](/documents/WIREFRAMES.md) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
 
 ## Surface:
-[Please see the live site here]()  
+[Please see the live site here](https://alices-wonderland.herokuapp.com/)  
 
 ***
 [Back to top](#Alices-Wonderland)  
@@ -307,6 +294,38 @@ The *Home* page contains the header and footer as mentioned above. It also conta
 
 &nbsp;
 
+### Sign up page:
+
+<details>
+<summary>Sign up page:</summary>
+
+![Sign up page]()
+</details> 
+
+&nbsp;
+
+### Login page:
+
+<details>
+<summary>Login page:</summary>
+
+![Login page]()
+</details> 
+
+&nbsp;
+
+### 404 error page:
+
+<details>
+<summary>404 error page:</summary>
+
+![404 error page]()
+</details> 
+
+&nbsp;
+
+
+
 ## Future Features:
 
 
@@ -320,33 +339,33 @@ We are looking to see if we have met all the goals we set out.
 #### New User: 
 * As a new user, I want to view all product  
 **Met on the All Products Page**
-* * As a new user, I want to view products by price 
+* As a new user, I want to view products by price   
 **Met on the All Products Page**
-* * As a new user, I want to view products by category  
+* As a new user, I want to view products by category    
 **Met on the All Products Page**
-*  As a new user, I want to add products to my basket
+*  As a new user, I want to add products to my basket  
 **Met on the Product Details Page**
 * As a new user, I want to edit product quantities from my basket   
 **Met on the Basket page, users can edit products using the quantity bar and the edit button**
 * As a new user, I want to delete products straight from my basket  
 **Met on the Basket page, users can delete products using the delete button**
-* As a new user, I want to securly checkout using a credit card 
+* As a new user, I want to securly checkout using a credit card  
 **Met on the Checkout page, users can fill out the checkout form, add credit card details and make a secure payment using Stripe**
-* As a new user, I want to create a profile
+* As a new user, I want to create a profile  
 **Met on the Register page**
-* As a new user, I want to sign up for a newsletter
+* As a new user, I want to sign up for a newsletter  
 **Met on the Newsletter page, users can fill out the formto sign up for a monthly newsletter**
-* As a new user, I want to contact the company with any queries
+* As a new user, I want to contact the company with any queries  
 **Met on the Contact Us page, users can fill out the form to send queries to the store**
 
 #### Returning User:
 * As a returning user, I want to be updated on new products via newsletter   
 **Met on the Newsletter page, users can fill out the formto sign up for a monthly newsletter**
-* As a returning user, I want to contact the company with any queries   
+* As a returning user, I want to contact the company with any queries     
 **Met on the Contact Us page, users can fill out the form to send queries to the store**
-* As a returning user, I want to leave reviews on products I have purchased   
+* As a returning user, I want to leave reviews on products I have purchased     
 **Met on the Product Details page, once the user is logged in**
-* As a returning user, I want to edit my profile  
+* As a returning user, I want to edit my profile    
 **Met on the Profile page, once the user is logged in**
 
 ***
@@ -369,19 +388,19 @@ Card details not appeating on checkout:
 <details>
 <summary>Card Error:</summary>
 
-![Display Error](/documents/images/readme_images/card_details_bug.png)
+![Card Details Error 1](/documents/images/readme_images/card_details_bug.png)
 </details> 
 
 <details>
 <summary>Original JS file:</summary>
 
-![Display Error](/documents/images/readme_images/js.png)
+![Original JS file](/documents/images/readme_images/js.png)
 </details> 
 
 <details>
 <summary>Updated JS file:</summary>
 
-![Display Error](/documents/images/readme_images/updated_js.png)
+![Updated JS file](/documents/images/readme_images/updated_js.png)
 </details>
 
 &nbsp;
@@ -402,32 +421,29 @@ When creating the add, edit and delete product functions for the site admin ther
 * After chatting with people on Slack it was suggested that I needed a for loop in the edit_products template to iterate through the each field of the form. I tried this but I was still getting the Attribute Error. 
 * I then went to ask the CI tutors. After a few different attempts to solve the issue, it was discovered that I was missing one of the asterisks in my forms.py file. Once this second asterisk was added the page and the form loaded correctly.  
 <details>
-<summary>Edit Product Error 1:</summary>
+<summary>Edit Product Error:</summary>
 
-![Display Error](/documents/images/readme_images/edit_product.png)
+![Edit Product Error](/documents/images/readme_images/edit_product.png)
 </details> 
 
-<details>
-<summary>Edit Product Error 2:</summary>
-
-![Display Error](/documents/images/readme_images/edit_product_2.png)
-</details> 
-
-<details>
-<summary>Edit Product Error 3:</summary>
-
-![Display Error](/documents/images/readme_images/edit_product_3.png)
-</details> 
-
-<details>
-<summary>Edit Product Error 4:</summary>
-
-![Display Error](/documents/images/readme_images/edit_product_4.png)
-</details> 
 &nbsp;
 
-### Confirmation Email Error:
-Confirmation emails where not being sent when an order was created. 
+### Modal Error:
+When adding the modal for user to add reviews the modal was appearing but was faded and the user was not able to access the different elements:
+* After doing some troubleshooting I saw a number of people say that the modal must be in a div where the position is fixed. I used Google Dev Tools to see if this was the case but still could not fix the error. I then contact the CI tutors who explained to me that because the modal postion relates to the screen itself it was clashing with some css and by moving it to the end of the html file, outside the div. This solved the issue and the modal then worked correctly   
+<details>
+<summary>Modal Error 1:</summary>
+
+![Modal Error 1](/documents/images/readme_images/modal_error.png)
+</details> 
+
+&nbsp;
+
+### Modal Submit Error:
+When adding the modal for user to add reviews the modal was appearing but was faded and the user was not able to access the different elements:
+* After doing some troubleshooting I saw a number of people say that the modal must be in a div where the position is fixed. I used Google Dev Tools to see if this was the case but still could not fix the error. I then contact the CI tutors who explained to me that because the modal postion relates to the screen itself it was clashing with some css and by moving it to the end of the html file, outside the div. This solved the issue and the modal then worked correctly   
+
+&nbsp;
 
 ***
 
