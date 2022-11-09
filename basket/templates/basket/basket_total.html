@@ -1,0 +1,8 @@
+<h6 class="basket-elements"><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+<h6 class="basket-elements">Shipping: ${{ shipping|floatformat:2 }}</h6>
+<h4 class="mt-4 basket-elements"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+{% if free_shipping_delta > 0 %}
+<p class="mb-1" style="font-weight: bold; color: darkmagenta;">
+    Spend <strong>${{ free_shipping_delta }}</strong> more to get free shipping!
+</p>
+{% endif %}
