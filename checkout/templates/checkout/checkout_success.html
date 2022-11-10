@@ -15,9 +15,9 @@
     <div class="row welcome-box">
         <div class="row h-100">
             <div class="col-12 col-md-12 col-sm-12 my-auto">
-                <h1 class="text-capitalize">Thank you for your order!</h1>
+                <h1 class="order-h1">Thank you for your order!</h1>
                 <hr class="w-20 mb-1 hr-visible">
-                <h4 style="text-transform: none;">Your order number is <strong>{{order.order_number}}</strong><br>
+                <h4 class="order-confirmation-heading">Your order number is <strong>{{order.order_number}}</strong><br>
                     A confrimation email will be sent to <i class="text-lowercase" style="
                     text-decoration: underline">{{order.email_address}}</i> shortly</h4>
                 <hr class="w-20 mb-1 hr-visible">
@@ -191,7 +191,7 @@
                     <hr class="w-20 mb-1 hr-visible">
                 </div>
 
-                <div class="col-12 col-lg-7 text-right">
+                <div class="col-12 col-lg-7 back-to-profile-btn text-right">
                     {% if from_profile %}
                     <a href="{% url 'user_profile' %}" class="btn shop-now-button rounded">
                         <span class="icon mr-2">

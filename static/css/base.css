@@ -412,6 +412,19 @@ select option[value=""] {
     margin-right: 20px;
 }
 
+.order-confirmation-heading {
+    font-family: Merienda;
+    text-transform: none;
+}
+
+.order-h1 {
+    text-transform: capitalize;
+}
+
+.back-to-profile-btn {
+    text-align: right;
+}
+
 /* Product Management */
 
 .headings {
@@ -518,3 +531,25 @@ select option[value=""] {
     .banner-text {
         font-size: 1rem;
     }
+
+    .order-h1 {
+        font-size: 1.25rem;
+    }
+
+    .order-confirmation-heading {
+        font-size: 1rem;
+    }
+
+    .order-confirmation-par {
+        font-size: 0.9rem;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .order-form-details {
+        font-size: 1.25rem;
+    }
+
+    .back-to-profile-btn {
+        text-align: center;
+    }   
