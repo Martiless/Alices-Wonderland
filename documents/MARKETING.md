@@ -60,11 +60,40 @@ It is a snippet of javascript that you paste into the header section of your web
 
 ### Facebook:
 
+<details>
+<summary>Alices Wonderland Facebook Page:</summary>
+
+![Facebook](/documents/images/marketing/facebook.png)
+</details>
+
+&nbsp;
+
+
+Facebook is a great platform for people to keep in touch with their customers and target audience. In 2022 Facebook has over 2.9 billion monthly active users worldwide and a daily active use of over 1.9 billion. The audience demographic is broken down as followed :
+   * Gender: Female - 43.2%, Male - 56.8%   
+| **Age** | **Female** | **Male** |       
+| 13-17 | 2.4% | 3.2% |  
+| 18-24 | 9.3% | 13.3% |  
+| 25-34 | 12.2% | 17.7% |  
+| 35-44 | 8.1% | 10.6% |  
+| 45-54 | 5.2% | 5.8% |  
+| 55-64 | 3.5% | 3.3% |  
+| 65+   | 2.8% | 2.5% |  
+
+   * 98.5% of Facebook users over the age of 18 access Facebook via a mobile device, while 81.8% of users over 18 years access Facebook ***Only*** via their mobile devices. 
+   * Most visited websites according to ***SEMRUSH*** in 2022 Facebook was the 3rd most visited website worldwide. 
+
+With all this information and with a marketing team that are constantly overseeing the users and the interaction that Alices Wonderland facebook page recieves, it will be easy for the team to device a Digital Marketing stratigy that will produce the most return on investment for the company. 
+
+Facebook stats where tajen from a 2022 report by [DATAREPORTAL](https://datareportal.com/essential-facebook-stats)
+
+
 ### Instagram:
 
 ***
 
 ## Email Marketing:
+
 
 ***
 
