@@ -421,9 +421,6 @@ select option[value=""] {
     text-transform: capitalize;
 }
 
-.back-to-profile-btn {
-    text-align: right;
-}
 
 /* Product Management */
 
@@ -549,7 +546,3 @@ select option[value=""] {
     .order-form-details {
         font-size: 1.25rem;
     }
-
-    .back-to-profile-btn {
-        text-align: center;
-    }   
