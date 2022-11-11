@@ -499,17 +499,19 @@ For this project, the following technologies were used.
 ## Validation:
 
 * HTML:
-      - No errors were found when passed through the [W3C Validator tool]()
-      - To view screenshots of validations please click [here](/documents/VALIDATION.md)
+      - Facebook Pixel code was removed form the base.html file as it was causing valiadition errors. To view this code please go to the [Marketing documnet](/documents/MARKETING.md) 
+      - HTML code came back it one error which was in relation to using list items inside a nav tag. As this was something that was done in the CI walkthrough and these elements were an important part of the webiste I choose not to change the code. 
 
 * CSS:
-      - No errors were found when passed through the [W3C Validator tool]() 
+      - No errors were found when passed through the [W3C Validator tool](https://jigsaw.w3.org/css-validator/validator) 
 
 * JavaScript: 
-      - No costume Javascript was used in this project. The Javascript included at the end of my base.html was taken from the Code Institutes walkthrough project. 
+      - The Javascript used throughout this project was taken from the Code Institutes walkthrough project and edit to suit this project. 
+      - No errors were found when passed through the [JSHints Validator](https://jshint.com/)
 
 * Python: 
-      - No errors were found when passed through [PEP8 Validator]()
+      - Simce PEP8Online validator is no longer available, I followed the CI recommendation for validating my Python code. 
+      - To view the steps taken to validate the Python code, please check the [Validation Document]()
 
 ***
 
