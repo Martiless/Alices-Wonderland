@@ -24,7 +24,7 @@ class WebhookHandler:
         Sends a confirmation email
         to the user
         """
-        customer_email = order.email
+        customer_email = order.email_address
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
             {'order': order})
