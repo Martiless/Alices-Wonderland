@@ -52,6 +52,9 @@
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
+    
+    <title>Alices Wonderland</title>
+
     <!-- Meta Pixel Code -->
     <!-- This script is provided to you be facebook when you
         set up a Pixel account for your business. 
@@ -73,7 +76,6 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
 
-    <title>Alices Wonderland</title>
 </head>
 
 <body>
@@ -125,7 +127,6 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item" rel="nofollow">Manage Store</a>
-                            <a href="" class="dropdown-item" rel="nofollow">Manage Reviews</a>
                             {% endif %}
                             <a href="{% url 'user_profile' %}" class="dropdown-item" rel="nofollow">My Profile</a>
                             <a href="{% url 'account_logout' %}"  rel="nofollow" class="dropdown-item">Logout</a>

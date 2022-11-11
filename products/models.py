@@ -52,7 +52,7 @@ class Review(models.Model):
     review_title = models.CharField(max_length=150)
     content = models.TextField()
     created = models.DateTimeField(auto_now=True)
-    status = models.IntegerField(choices=STATUS, default=0)
+    status = models.IntegerField(choices=STATUS, default=1)
 
     class Meta:
         ordering = ["created"]

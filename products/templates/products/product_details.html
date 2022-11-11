@@ -93,14 +93,14 @@
                         {% if reviews %}
                         {% for reviews in reviews %}
                         <div>
-                            <p class="font-weight-bold">
-                                {{ review.review_title }}
-                                <span class=" text-muted font-weight-normal">
-                                    {{ review.created }} by {{ review.reviewer }}
-                                </span>
+                            <p class="font-weight-bolder text-uppercase" style="font-size: large;">
+                                {{ reviews.review_title }}
+                            </p>
+                            <p class=" text-white font-weight-light font-italic" style="font-size: small;">
+                                    {{ reviews.created }} by {{ reviews.reviewer }}
                             </p>
                             <p>
-                                {{ review.content | linebreaks }}
+                                {{ reviews.content | linebreaks }}
                             </p>
                         </div>
                         {% endfor %}
@@ -110,18 +110,12 @@
                     </div>
                 </div>
                 <div>
-                    {% if reviewed %}
-                    <div class="alert alert-success" role="alert">
-                        Your review is awaiting verification!
-                    </div>
-                    {% else %}
                     {% if request.user.is_authenticated %}
                     <button href="{% url 'add_review' %}" type="button"
                         class="shop-now-button btn btn-lg text-uppercase rounded" data-toggle="modal"
                         data-target="#productReview">
                         <span>Add Product Review</span>
                     </button>
-                    {% endif %}
                     {% endif %}
                 </div>
 

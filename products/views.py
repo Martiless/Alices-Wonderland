@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Review
 from .forms import ManageProductsForm, ReviewForm
 
 
@@ -70,7 +70,8 @@ def product_details(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     template = 'products/product_details.html'
     form = ReviewForm()
-    reviews = []
+    reviews = Review.objects.filter(product=product)
+    print(reviews)
 
     if request.method == 'POST':
         form = ReviewForm(request.POST, request.FILES)
@@ -79,7 +80,7 @@ def product_details(request, product_id):
             review.reviewer = request.user
             review.product = product
             review.save()
-            messages.success(request, 'Thank you for your review. It is currently under review!')
+            messages.success(request, f'Thank you your review of {product.name}')
             return redirect(reverse('product_details', args=[product.id]))
         else:
             form = ReviewForm()
