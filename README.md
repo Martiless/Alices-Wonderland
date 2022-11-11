@@ -463,6 +463,7 @@ For this project, the following technologies were used.
 * Django
 * PostgreSQL
 * Bootstrap
+* AWS
 
 #### Google Font
 * Google Font was used to import the chosen fonts for this project.
@@ -479,8 +480,8 @@ For this project, the following technologies were used.
 #### Heroku
 * Heroku was used to deploy the project.
 
-#### Cloudinary
-* Cloudinary was used to store some of the images used in this project
+#### Amazon Web Services
+* AWS was used to store some of the images used in this project
 
 #### Balsamiq 
 * Balsamiq was used to draw initial Wireframes for this project.

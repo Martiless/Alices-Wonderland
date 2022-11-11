@@ -35,7 +35,11 @@
         aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-user fa-lg"></i></div>
-            <p class="my-0">My Account</p>
+            {% if request.user.is_authenticated %}
+            <span class="my-0 par">{{user.username}}</span>
+            {% else %}
+            <span class="my-0 par">My Account</span>
+            {% endif %}
         </div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
