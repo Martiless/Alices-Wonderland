@@ -32,7 +32,12 @@ class WebhookHandler:
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
 
-        send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [customer_email])
+        send_mail(
+            subject,
+            body,
+            settings.DEFAULT_FROM_EMAIL,
+            [customer_email]
+            )
 
     def handle_event(self, event):
         """
@@ -82,8 +87,8 @@ class WebhookHandler:
             try:
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
-                    email__iexact=billing_details.email,
-                    phone_number__iexact=shipping_details.phone,
+                    email_address__iexact=billing_details.email,
+                    phone__iexact=shipping_details.phone,
                     country__iexact=shipping_details.address.country,
                     postcode__iexact=shipping_details.address.postal_code,
                     town_or_city__iexact=shipping_details.address.city,
