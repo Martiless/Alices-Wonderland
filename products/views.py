@@ -71,7 +71,6 @@ def product_details(request, product_id):
     template = 'products/product_details.html'
     form = ReviewForm()
     reviews = Review.objects.filter(product=product)
-    print(reviews)
 
     if request.method == 'POST':
         form = ReviewForm(request.POST, request.FILES)
