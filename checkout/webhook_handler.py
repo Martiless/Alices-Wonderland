@@ -1,9 +1,13 @@
 import json
+import time
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
-from .models import Order
+from products.models import Product
+from profiles.models import UserProfile
+from .models import Order, OrderLineItems
+
 
 
 
@@ -120,7 +124,7 @@ class WebhookHandler:
                 for item_id, item_data in json.loads(basket).items():
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
-                        order_line_item = OrderLineItem(
+                        order_line_item = OrderLineItems(
                             order=order,
                             product=product,
                             quantity=item_data,
