@@ -70,6 +70,7 @@ def product_details(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     template = 'products/product_details.html'
     form = ReviewForm()
+    reviews = []
 
     if request.method == 'POST':
         form = ReviewForm(request.POST, request.FILES)
@@ -86,6 +87,7 @@ def product_details(request, product_id):
     context = {
         'product': product,
         'form': form,
+        'reviews': reviews,
     }
 
     return render(request, template, context)

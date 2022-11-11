@@ -48,7 +48,8 @@ For the purpose of this project I created a Meta Business Suite account and set 
 
 ### Pixel:
 The Meta pixel is a piece of code on your website that can help you better understand the effectiveness of your advertising and the actions that people take on your site, such as visiting a page or adding an item to their basket. You'll also be able to see when customers took an action after seeing your ad on Facebook and Instagram, which can help you with retargeting.
-It is a snippet of javascript that you paste into the header section of your website, just above the closing head tag
+It is a snippet of javascript that you paste into the header section of your website, just above the closing head tag.
+For information on how to set up and install Pixel, check out [Metas Business Help Centre](https://www.facebook.com/business/help/952192354843755?id=1205376682832142) 
 
 <details>
 <summary>Pixel Code:</summary>
@@ -65,6 +66,8 @@ It is a snippet of javascript that you paste into the header section of your web
 
 ![Facebook](/documents/images/marketing/facebook.png)
 </details>
+
+Click [here](https://www.facebook.com/alices.wonderland.cork) to view to live Facebook page
 
 &nbsp;
 

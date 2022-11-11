@@ -52,9 +52,10 @@
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
-
-    <title>Alices Wonderland</title>
     <!-- Meta Pixel Code -->
+    <!-- This script is provided to you be facebook when you
+        set up a Pixel account for your business. 
+        To see how to do this please check the Marketing document -->
 <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -71,6 +72,8 @@
     src="https://www.facebook.com/tr?id=497709722401241&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+
+    <title>Alices Wonderland</title>
 </head>
 
 <body>
@@ -122,6 +125,7 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item" rel="nofollow">Manage Store</a>
+                            <a href="" class="dropdown-item" rel="nofollow">Manage Reviews</a>
                             {% endif %}
                             <a href="{% url 'user_profile' %}" class="dropdown-item" rel="nofollow">My Profile</a>
                             <a href="{% url 'account_logout' %}"  rel="nofollow" class="dropdown-item">Logout</a>
@@ -191,7 +195,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}
