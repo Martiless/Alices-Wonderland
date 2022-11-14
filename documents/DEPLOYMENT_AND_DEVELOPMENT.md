@@ -10,13 +10,13 @@ The following steps were taken:
 1. Select "New" and "Create new app".
 1. Name the new app and click "Create new app".
 1. In "Settings" under the Config Vars (we will discuss these at a later point)
-click on  "Add BuildPack" and add Heroku/Python.
+1. Click on  "Add BuildPack" and add Heroku/Python.
 
 ***
 
 ### Step two: 
 #### Add the datebase: 
-1. Once the app is created click on the "Resources" tab and search for Postgres. Once option appear add Heroku Postgres to the project.
+1. Once the app is created click on the "Resources" tab and search for Postgres. Once the option appears add Heroku Postgres to the project.
 1. Click on the "Settings" tab at the top of the page
 1. Open the "Reveal Config Vars" section to reveal the DATABASE_URL: this is automatically generated when you add Heroku Postgres to the project
 1. In GitPod create an env.py file and copy in the string value from Heroku.
@@ -29,18 +29,18 @@ click on  "Add BuildPack" and add Heroku/Python.
 1. Open the "Reveal Config Vars" section and input the following information:
       * SECRET_KEY: This is a key that you make up but do not give to anyone 
       * AWS_ACCESS_KEY: set to the key provided by [AWS](https://aws.amazon.com/) to be used as a storage platform for all the media and static file for this site     
-      * AWS_SECRET_ACCESS_KEY: tset to the key provided by [AWS](https://aws.amazon.com/)        
-      ***(These two keys need to be kept secret or else someone would be able to use them to store data in your account and you will be cahrged for it by Amazon)***
-      * USE_AWS: This should be set to TRUE and will be used to check if you are in a development enviroment or if your are on the deployed Heroku site and use the correct static and media files accordingly 
+      * AWS_SECRET_ACCESS_KEY: set to the key provided by [AWS](https://aws.amazon.com/)        
+      ***(These two keys need to be kept secret or else someone would be able to use them to store data in your account and you will be charged for it by Amazon)***
+      * USE_AWS: This should be set to TRUE and will be used to check if you are in a development environment or if you are on the deployed Heroku site and use the correct static and media files accordingly 
      
 #### Note:
 All the above Heroku Config vars have also been put into an env.py file in Gitpod. This is done in the following way. 
 1. At the top level add a file called env.py 
-1. Find your gitignore file and add env.py it. This will provent the env.py fil from being pushed to your GitHub repo when you push files. 
+1. Find your gitignore file and add env.py it. This will prevent the env.py fil from being pushed to your GitHub repo when you push files. 
 1. In the env.py file `import os` at the top of the file. 
-1. The envirment variables will then be set up as followed    
+1. The environment variables will then be set up as followed    
 `os.environ["USE_AWS"] = "True"`   
-Following this stucture add all the Config vars that are required from Heroku 
+Following this structure add all the Config vars that are required from Heroku 
 *The env.py file is used to protect keys that should only be accessed by the developer*  
 
 ***
@@ -58,7 +58,7 @@ Following this stucture add all the Config vars that are required from Heroku
 1. Import Path from pathlib, dj_database_url and os into the settings.py file within the project.
 1. Update the default SECRET_KEY variable provided by Django to the SECRET_KEY you created in the env.py file. 
 1. Update the DATABASES so it uses the one from the env.py file. 
-1. Perform a Migrations so that Heroku Database is now being used as the backend database. 
+1. Perform a Migration so that Heroku Database is now being used as the backend database. 
 
 ***
 
@@ -72,7 +72,7 @@ Following this stucture add all the Config vars that are required from Heroku
 
 ### Step Seven:
 #### Set up Allowed Hosts:
-1. Under DEBUG = TRUE to the ALLOWED_HOSTS key. Inside the square brackets make it equal to your heroku app url and 'localhost'
+1. Under DEBUG = TRUE to the ALLOWED_HOSTS key. Inside the square brackets make it equal to your  Heroku app URL and 'localhost'
 
 ***
 
@@ -82,10 +82,10 @@ Following this stucture add all the Config vars that are required from Heroku
 1. After you have created the Config vars for AWS (as above) and added it to the env.py you must now set it up in the settings.py 
 1. Before this you will need to install two new packages. 
       * boto3 
-      * django storages
+      * Django storages
 1. Don't forget to freeze your requirements.txt file once these are installed 
-1. In your settings.py file make your way down to INSTALLED_APPS, then add  'storages'. Put these under the django apps and don't forget the comma at the end or you will get an error.
-1. You now have to tell your app to use AWS as the storage for your media and static files but only when it has been deployed to Heroku. This is done by writting the following code in your settings.py file, under the STATIC_URL.
+1. In your settings.py file make your way down to INSTALLED_APPS, then add  'storages'. Put these under the Django apps and don't forget the comma at the end or you will get an error.
+1. You now have to tell your app to use AWS as the storage for your media and static files but only when it has been deployed to Heroku. This is done by writing the following code in your settings.py file, under the STATIC_URL.
 `if 'USE_AWS' in os.environ:`   
 `# S3 Bucket Config`   
 `AWS_STORAGE_BUCKET_NAME = 'alices-wonderland'`   
@@ -129,17 +129,17 @@ To find out more about using Stripe check out their documentation [here](https:/
 ### Step Ten:
 #### Set up Emailing in settings.py:   
  ***(This is used to send emails from a Gmail account from your site )*** 
-1. Log into your gmail account. 
+1. Log into your Gmail account. 
 1. Go to the settings tab and navigate to "Accounts and Imports"
-1. Once there click on "Other Google Account Settints"
+1. Once there click on "Other Google Account Settings"
 1. Click in the "Security" tab and then turn on "2-Step Verification"
-1. Once that is done you can now create an app password specific to your django app, this will allow you send emails from Gmail.
+1. Once that is done you can now create an app password specific to your Django app, this will allow you to send emails from Gmail.
 1. Under the "Sign into Google" heading you will now see a new option called "App Passwords". Click on it
 1. On the "App Password" screen, select Main for the app and Other for the device. Then type in Django for the device name.
-1. Click on the "Generate" button, this will bring up a 16 character that you can then add to Heroku and yout env.py file as you Email password.
+1. Click on the "Generate" button, this will bring up a 16 character that you can then add to Heroku and your env.py file as your Email password.
 
-1. You now can set up emailing in your settings.py file. This can be done in the following way:
-When we are using the development enviroment the emails will still be sent from django but for the deployed site it will be sent by Gmail. 
+1. You now can set up email in your settings.py file. This can be done in the following way:
+When we are using the development environment the emails will still be sent from Django but for the deployed site it will be sent by Gmail. 
 `EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'`   
 `EMAIL_USE_TLS = True`   
 `EMAIL_PORT = 587`   
@@ -183,7 +183,7 @@ When we are using the development enviroment the emails will still be sent from 
 #### Create a sitemap.xml file:
 1. On the same level as your env.py and README.md files create a sitemap.xml file.
 1. To generate a sitemap you can use a site such as [Free Online Sitemap Generator](www.xml-sitemaps.com )  
-1. This file is aslo quite important for the SEO of your site. It is used to provide information about the pages, videos, and other files on your site, and the relationships between them. Search engines like Google read this file to crawl your site more efficiently.
+1. This file is also quite important for the SEO of your site. It is used to provide information about the pages, videos, and other files on your site, and the relationships between them. Search engines like Google read this file to crawl your site more efficiently.
 
 
 ***
@@ -193,7 +193,7 @@ When we are using the development enviroment the emails will still be sent from 
 1. You can choose to either deploy your project using "Enable Automatic Deploys" or "Deploy Branch" in the manual deploy section.
       * Note, if you click on Automatic Deploys, you will still need to hit deploy branch to build the site
 1. Heroku will now deploy the site.
-      * Note: before delpoying the final project you must remember to change DEGUGG from TRUE to FALSE in your app settings through GitPod
+      * Note: before deploying the final project you must remember to change DEGUGG from TRUE to FALSE in your app settings through GitPod
 
 ***
 
