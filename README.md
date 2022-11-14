@@ -522,8 +522,8 @@ For this project, the following technologies were used.
 
 ***
 
-## Deployment:
-Deployment information can be found [here](/documents/DEPLOYMENT.md)
+## Deployment and Development:
+Deployment and Development information can be found [here](/documents/DEPLOYMENT_AND_DEVELOPMENT.md)
 
 ***
 

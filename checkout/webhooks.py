@@ -35,7 +35,6 @@ def webhook(request):
 
     # Set up a webhook handler
     handler = WebhookHandler(request)
-    print('webhook interacted')
 
     # Map webhook events to relevant handler functions
     event_map = {
