@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, HttpResponse, \
+    get_object_or_404
 from django.contrib import messages
 from products.models import Product
 
@@ -25,11 +26,13 @@ def add_to_basket(request, item_id):
     if item_id in list(basket.keys()):
         basket[item_id] += quantity
         messages.success(
-            request, f'{product.name} has been updated. Quantity is now {basket[item_id]}')
+            request, f'{product.name} has been updated. \
+                Quantity is now {basket[item_id]}')
     else:
         basket[item_id] = quantity
         messages.success(
-            request, f'You have successfully added {product.name} in your basket.')
+            request, f'You have successfully added \
+                {product.name} in your basket.')
 
     request.session['basket'] = basket
     return redirect(redirect_url)
@@ -49,11 +52,13 @@ def update_basket(request, item_id):
     if quantity > 0:
         basket[item_id] = quantity
         messages.success(
-            request, f'{product.name} has been updated. Quantity is now {basket[item_id]}')
+            request, f'{product.name} has been updated. \
+            Quantity is now {basket[item_id]}')
     else:
         basket.pop(item_id)
         messages.success(
-            request, f'You have successfully removed {product.name} from your basket')
+            request, f'You have successfully removed \
+            {product.name} from your basket')
 
     request.session['basket'] = basket
     return redirect(reverse('basket'))
@@ -68,11 +73,12 @@ def delete_from_basket(request, item_id):
 
     product = get_object_or_404(Product, pk=item_id)
     basket = request.session.get('basket', {})
-    
+
     try:
         basket.pop(item_id)
         messages.success(
-            request, f'You have successfully removed {product.name} from your basket')
+            request, f'You have successfully removed \
+                {product.name} from your basket')
 
         request.session['basket'] = basket
         return HttpResponse(status=200)

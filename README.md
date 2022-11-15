@@ -362,10 +362,6 @@ We are looking to see if we have met all the goals we set out.
 * As a returning user, I want to edit my profile    
 **Met on the Profile page, once the user is logged in**
 
-***
-
-## Testing:
-Testing information can be viewed [here](/documents/TESTING.md)
 
 ***
 
@@ -495,6 +491,8 @@ For this project, the following technologies were used.
 ### Marketing:
 For marketing report please click [here](/documents/MARKETING.md)
 
+## Testing:
+Testing information can be viewed [here](/documents/TESTING.md)
 
 ### Validation:
 

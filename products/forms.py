@@ -51,5 +51,3 @@ class ReviewForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'modal-elements'
             self.fields[field].label = False
-
-

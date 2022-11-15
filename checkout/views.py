@@ -13,7 +13,6 @@ from .forms import OrderForm
 from .models import Order, OrderLineItems
 
 
-
 @require_POST
 def cache_checkout_data(request):
     """
@@ -71,14 +70,15 @@ def checkout(request):
                         order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "One of the products in your bag wasn't found. "
                         "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_basket'))
-            
+
             request.session['save_info'] = 'save_info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                            args=[order.order_number]))
         else:
             messages.error(request, "There was an error in your form. \
                 Please check all the information is correct!")
