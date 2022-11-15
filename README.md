@@ -542,7 +542,8 @@ For this project, the following technologies were used.
 To view the database schemas for this project click [here](/documents/DATABASE_SCHEMA.md)
 
 ### Marketing:
-For marketing report please click [here](/documents/MARKETING.md)
+For marketing report please click [here](/documents/MARKETING.md)   
+When adding the Facebook and Instagram links to the footer the *rel of "nofollow"* was used to inform search engines they can ignore these links.
 
 ## Testing:
 Testing information can be viewed [here](/documents/TESTING.md)
