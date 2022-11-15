@@ -23,12 +23,13 @@ This website has been created as the Fifth Milestone project for Code Institute'
       1. [Font](#Font)
       1. [Images](#Images)
  1. [Features](#Features)
- 1. [Testing](#Testing)
  1. [User Stories Met](#User-Stories-Met)
  1. [Bugs](#Bugs)
  1. [Technologies Used](#Technologies-Used)
  1. [Reports and Credits](#reports-and-credits)
+      1. [Database Schema](#database-schema)
       1. [Marketing](#Marketing)
+      1. [Testing](#Testing)
       1. [Validation](#Validation)
       1. [Accessibility](#Accessibility)
       1. [Deployment](#Deployment)
@@ -322,8 +323,8 @@ The *Home* page contains the header and footer as mentioned above. It also conta
 
 ## Future Features:
 
-
 ***
+
 
 [Back to top](#Alices-Wonderland)  
 
@@ -487,6 +488,9 @@ For this project, the following technologies were used.
 [Back to top](#Alices-Wonderland)
 
 ## Reports and Credits:
+
+### Database Schema:
+To view the database schemas for this project click [here](/documents/DATABASE_SCHEMA.md)
 
 ### Marketing:
 For marketing report please click [here](/documents/MARKETING.md)
