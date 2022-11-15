@@ -22,20 +22,18 @@ This website has been created as the Fifth Milestone project for Code Institute'
       1. [Color](#Color)
       1. [Font](#Font)
       1. [Images](#Images)
- 1. [Marketing](#Marketing)
-      1. [Facebook](#Facebook)
-      1. [Instagram](#Instagram)
-      1. [SEO](#SEO)
  1. [Features](#Features)
  1. [Testing](#Testing)
  1. [User Stories Met](#User-Stories-Met)
  1. [Bugs](#Bugs)
  1. [Technologies Used](#Technologies-Used)
- 1. [Validation](#Validation)
- 1. [Accessibility](#Accessibility)
- 1. [Deployment](#Deployment)
- 1. [Credits](#Credits)
- 1. [Acknowledgements](#Acknowledgements)
+ 1. [Reports and Credits](#reports-and-credits)
+      1. [Marketing](#Marketing)
+      1. [Validation](#Validation)
+      1. [Accessibility](#Accessibility)
+      1. [Deployment](#Deployment)
+      1. [Credits](#Credits)
+      1. [Acknowledgements](#Acknowledgements)
 
 ***
  
@@ -180,12 +178,8 @@ Fonts used for this site were Merienda and Lora, both of which have been importe
 The images for this project were mostly taken from Pinterest.
  
 
-
 ***
 [Back to top](#Alices-Wondeland)  
-
-## Marketing:
-For marketing report please click [here](/documents/MARKETING.md)
 
 
 ## Features:
@@ -496,7 +490,13 @@ For this project, the following technologies were used.
 
 [Back to top](#Alices-Wonderland)
 
-## Validation:
+## Reports and Credits:
+
+### Marketing:
+For marketing report please click [here](/documents/MARKETING.md)
+
+
+### Validation:
 
 * HTML:
       - Facebook Pixel code was removed form the base.html file as it was causing valiadition errors. To view this code please go to the [Marketing documnet](/documents/MARKETING.md) 
@@ -510,29 +510,33 @@ For this project, the following technologies were used.
       - No errors were found when passed through the [JSHints Validator](https://jshint.com/)
 
 * Python: 
-      - Simce PEP8Online validator is no longer available, I followed the CI recommendation for validating my Python code. 
+      - Since PEP8Online validator is no longer available, I followed the CI recommendation for validating my Python code. 
       - To view the steps taken to validate the Python code, please check the [Validation Document]()
 
 ***
 
 [Back to top](#Alices-Wonderland)
 
-## Accessibility:
-![LightHouse Report]()
+### Accessibility:
+To view the Lighthouse Reports for this project please click [here](/documents/LIGHTHOUSE_REPORT.md)
 
 ***
 
-## Deployment and Development:
+### Deployment and Development:
 Deployment and Development information can be found [here](/documents/DEPLOYMENT_AND_DEVELOPMENT.md)
 
 ***
 
-## Credits:
+### Credits:
 * The initial setup of the Django project was done following the Code Institutes walkthrough project.  
 
 
-## Acknowledgements:
+### Acknowledgements:
 * I would like to thank Brian O’Hare for being my mentor for this project.
+* I would like to thank Ed from tutor support.
+* I would like to thank Ger from tutor support.
+* I would like to thank Liz, who has been there to help and support me from the start
+* I would like to thank the Slack community for all their support and encouragement during this and all my projects.
 
 
 *** 
