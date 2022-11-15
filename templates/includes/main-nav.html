@@ -10,10 +10,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -22,9 +21,9 @@
                 Creatures
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="creatures-link">
-                <a href="{% url 'products' %}?category=plants" class="dropdown-item">Plants</a>
-                <a href="{% url 'products' %}?category=animals" class="dropdown-item">Animals</a>
                 <a href="{% url 'products' %}?category=plants,animals" class="dropdown-item">All Creatures</a>
+                <a href="{% url 'products' %}?category=plants" class="dropdown-item">Plants</a>
+                <a href="{% url 'products' %}?category=animals" class="dropdown-item">Animals</a>  
             </div>
         </li>
 
@@ -39,10 +38,10 @@
 
         <li class="nav-item dropdown">
             <a class="font-weight-bold nav-link mr-5" href="#" id="edibles-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Edibles
+                Consumables
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="edibles-link">
-                <a href="{% url 'products' %}?category=edibles" class="dropdown-item">Edibles</a>
+                <a href="{% url 'products' %}?category=edibles" class="dropdown-item">Consumables</a>
             </div>
         </li>
 
@@ -51,9 +50,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'products' %}?category=new_arrivals,clearance" class="dropdown-item">All Specials</a>
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
