@@ -6,7 +6,7 @@ This website has been created as the Fifth Milestone project for Code Institute'
 
 
 ### View the live website [here](https://alices-wonderland.herokuapp.com/)
-![Live Website]()
+![Live Website](/documents/images/readme_images/am_i_responsive.png)
 
 ***
 ## Table of content: 
@@ -16,7 +16,6 @@ This website has been created as the Fifth Milestone project for Code Institute'
       1. [Development Planes](#Development-Planes)
             * [Strategy](#Strategy)
             * [Scope](#Scope)
-            * [Structure](#Structure)
             * [Skeleton](#Skeleton)
             * [Surface](#Surface)
       1. [Color](#Color)
@@ -73,14 +72,14 @@ To view to progression of this project please view my project document by clicki
 * As a new user, I want to add products to my basket
 * As a new user, I want to edit product quantities from my basket
 * As a new user, I want to delete products straight from my basket
-* As a new user, I want to securly checkout using a credit card
+* As a new user, I want to securely checkout using a credit card
 * As a new user, I want to create a profile 
 * As a new user, I want to sign up for a newsletter
 * As a new user, I want to contact the company with any queries
 
 
 #### Returning User:
-* As a returning user, I want to be updated on new products via newsletter
+* As a returning user, I want to be updated on new products via the newsletter
 * As a returning user, I want to contact the company with any queries
 * As a returning user, I want to leave reviews on products I have purchased
 * As a returning user, I want to edit my profile
@@ -89,7 +88,7 @@ To view to progression of this project please view my project document by clicki
 To create a website that is comprehensive and informative for a user, as a developer you need to look at all aspects of the website and how someone who visits your website will use it. You have to consider all the user stories that have been outlined in the above sections.  
 
 ## Strategy
-The strategy principal looks at user needs, as well product/service objectives. This website's target audience was broken down into three categories:
+The strategy principle looks at user needs, as well as product/service objectives. This website's target audience was broken down into three categories:
 ### Roles: 
 * New User
 * Existing User  
@@ -97,8 +96,6 @@ The strategy principal looks at user needs, as well product/service objectives. 
 ### Demographic:
 * Aged between 25 to 60
 * Working individuals with disposable income
-
-### Psychographic:
 
 #### Lifestyle:
 * Collectors
@@ -115,47 +112,37 @@ The strategy principal looks at user needs, as well product/service objectives. 
 * Contact the store with enquiries
 * Sign up for a newsletter
 * Leave reviews for products they bought
-* Visit the stores social media accounts straight from the site 
+* Visit the store's social media accounts straight from the site 
 
 #### The website needs to allow the store owner to:  
 * Add, edit and delete products straight from the frontend site 
 * Collect information from order forms
-* Collect email address for the purpose of monthly marketing newsletter
-* Approve of product reviews to unsure they are genuine customer reviews and not spam
+* Collect email addresses for a monthly marketing newsletter
 
 
 ## Scope:  
 
 With the structure in place, it was then time to move onto the scope plane. This was all about developing website requirements based on the goals set out in the strategy plane. These requirements are broken down into two categories. 
+
 ### Content Requirements:
 1. The user will be looking for:
       * A list of products that can be purchased 
       * Information about the store owner
-      * Links to the stores social media accounts
+      * Links to the store's social media accounts
 
 ### Functionality Requirements:
 1. The user will be able to:
-      * Browse all the stores products
+      * Browse all the store's products
       * Add products to a basket
       * Edit their basket
       * Complete orders using Stripe
       * Create a user account
-      * Update information on user account
+      * Update information on a user account
       * Leave reviews on products
       * Contact the store with enquires 
       * Sign up for a newsletter
 
 ***
-
-## Structure:
-
-The information above was then used to create a structure for the website. Below is a site map showing how users can navigate the website intuitively 
-<details>
-<summary>Sitemap</summary>
-
-![Sitemap]()
-</details>
-
 
 ## Skeleton:
 [Wireframes](/documents/WIREFRAMES.md) were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
@@ -167,8 +154,12 @@ The information above was then used to create a structure for the website. Below
 [Back to top](#Alices-Wonderland)  
 
 ### Color: 
-The green and purple colors used throughout this site were taken directly from the backgroud image using a color picker. White was then used to enhace them and make them pop on hte screen. 
+The green and purple colors used throughout this site were taken directly from the background image using a color picker. White has been used to enhance these colors and make the colors on the site pop on the screen. 
+<details>
+<summary>Color Palette</summary>
 
+![Color Palette](/documents/images/readme_images/color_palette.png)
+</details>
 
 
 ### Font:
@@ -191,130 +182,161 @@ There are several features on this site to help users get the most out of their 
 <details>
 <summary>Header and Nav Bar:</summary>
 
-![Header and Nav Bar]()
+![Header and Nav Bar](/documents/images/readme_images/header.png)
 </details>
 Each page has a Header and Navigation bar section, located at the top of the page. 
-The navigation bar consisted of links to a link to the About section, the users Account section, the users Shopping Basket and a search bar. As well as the shop logo with when click will bring the user back to the home page. 
-It also contains a navigation bar that has the categories the user can use to shop the products. 
+The navigation bar consisted of links to a link to the About section, the user's Account section, the user's Shopping Basket and a search bar. As well as the shop logo when clicked will bring the user back to the home page. 
+It also contains a navigation bar that has the categories the user can use to shop for the products. 
+
 
 &nbsp;
 
 <details>
 <summary>Footer Information:</summary>
 
-![Social Media]()
+![Footer](/documents/images/readme_images/footer.png)
 </details> 
 Each page also contains a footer element that consists of the store's social media accounts, as well as usefull links and copyright information. 
 
 &nbsp;
 
 ### Home page:
-The *Home* page contains the header and footer as mentioned above. It also contains a main box that welcomes the user to the store and a link to shop, which brings the user to the *All Products* page  
+The *Home* page contains a main box that welcomes the user to the store and a link to shop, which brings the user to the *All Products* page  
 
 <details>
-<summary>Home Page:</summary>
+<summary>Home:</summary>
 
-![Home Page]()
+![Home Page](/documents/images/readme_images/home.png)
 </details> 
 
 &nbsp;
 
-### About Me page:  
+### About Me page: 
+The *About Me* page features an image of Alice and a bit about how Alices Wonderland came to be.  
 
 <details>
 <summary>About Me page:</summary>
 
-![About Me page]()
+![About Me](/documents/images/readme_images/about_me.png)
 </details> 
 
 &nbsp;
 
-### All Products page:  
+### All Products:  
+The *All Products* page contains a list of all the products available in the shop. They are displayed using an image, the product name, price and rating. Users can click on the image of the product to bring them to that products *details* page
 
 <details>
-<summary>All Products page:</summary>
+<summary>All Products:</summary>
 
-![All Products page]()
+![All Products](/documents/images/readme_images/all_products.png)
 </details> 
 
 &nbsp;
 
 ### Product Detail page:  
+The *Products Details* page contains an image of the product, as well as the product name, description, price and rating. This is the page where a user can use the quantity input bar to decide how much of this product they would like. It also contains a "Keep Shopping" button which brings the user back to the *All Products* page and a "Add to Basket" button which adds the desired quantity of the product to their basket. Logged-in users will also see an "Add Product Review" button in the "Reviews" section of this page, allowing them to add product reviews.
 
 <details>
-<summary>Product Detail page:</summary>
+<summary>Product Detail:</summary>
 
-![Product Detail page]()
+![Product Detail](/documents/images/readme_images/product_details.png)
 </details> 
 
 &nbsp;
 
 ### Basket: 
+The *Basket* page contains a summary of the user's order. It is at this point that they can edit the quantity of the products in their basket, as well as delete them. It shows the users the total of their order, along with the shipping cost. It also contains a "Keep Shopping" button which brings the user back to the *All Products* page and a "Secure Checkout" button which brings the user to the *Checkout* page.
 
 <details>
 <summary>Basket:</summary>
 
-![Basket]()
+![Basket](/documents/images/readme_images/basket.png)
 </details> 
 
 &nbsp;
 
 ### Checkout:
-
+The *Checkout* page contains a summary of the user's order. It has an order form which the user will need to fill out to complete their order. It also contains an "Edit Basket" button which brings the user back to their *Basket* and a "Complete Order" button which will submit the order and product and order confirmation.
 <details>
 <summary>Checkout:</summary>
 
-![Checkout]()
+![Checkout](/documents/images/readme_images/checkout.png)
 </details> 
 
 &nbsp;
 
 ### Contact us page:
+The *Contact Us* page contains a contact form which the user will need to fill out to send their enquiry to the store. Once the "Send Message" button is clicked the user will be directed back to *Home* and will be notified that they will be contacted soon.
 
 <details>
-<summary>Contact us page:</summary>
+<summary>Contact us:</summary>
 
-![Contact us page]()
+![Contact us](/documents/images/readme_images/contact_us.png)
 </details> 
 
 &nbsp;
 
 ### Newsletter page:
+The *Newsletter* page contains a form which the user will need to fill out to sign up for the store's newsletter. Once the "Sign Up!" button is clicked the user will be directed back to *Home* and will get a notification thanking them for signing up.
 
 <details>
-<summary>Newsletter page:</summary>
+<summary>Newsletter:</summary>
 
-![Newsletter page]()
+![Newsletter](/documents/images/readme_images/newsletter.png)
 </details> 
 
 &nbsp;
 
 ### Sign up page:
+The *Sign Up* page contains a form that the user will need to fill out if they wish to register for the site. Once the "Sign Up!" button is clicked the user will be directed back to a page informing them that a verification email has been sent to the email address provided and they will need to follow the link to complete their registration.
 
 <details>
-<summary>Sign up page:</summary>
+<summary>Sign up:</summary>
 
-![Sign up page]()
+![Sign up](/documents/images/readme_images/sign_up.png)
 </details> 
 
 &nbsp;
 
 ### Login page:
+The *login* page contains a form for the user to enter their login information. Once the "Sign In" button is clicked the user will be directed back to *Home*
 
 <details>
-<summary>Login page:</summary>
+<summary>Login:</summary>
 
-![Login page]()
+![Login](/documents/images/readme_images/sign_in.png)
+</details> 
+
+&nbsp;
+
+### My Profle page:
+The *My Profile* page contains two elements. On the left-hand side of the screen, there is a form for users to update their shipping information. Once the "Update Information" button is clicked the page reloads with the new information. On the right-hand side of the screen, there is a list of the user's order history. If the user clicks on the Order number they will be directed to the order confirmation page. 
+
+<details>
+<summary>My Profile:</summary>
+
+![My Profile](/documents/images/readme_images/my_profile.png)
+</details> 
+
+&nbsp;
+
+### Logout page:
+The *logout* page contains a notification asking the user if they are sure they would like to login out. Once the "Sign out" button is clicked the user is directed back to *Home*.
+
+<details>
+<summary>Logout:</summary>
+
+![Logout](/documents/images/readme_images/log_out.png)
 </details> 
 
 &nbsp;
 
 ### 404 error page:
-
+The *404 error* page contains a notification to let the user know that they have entered a URL that doesn't exist. There is an image of Alice falling down the rabbit hole and a link bringing the user back to the *All Products* page. 
 <details>
-<summary>404 error page:</summary>
+<summary>Custom 404:</summary>
 
-![404 error page]()
+![Custom 404](/documents/images/readme_images/custom_404.png)
 </details> 
 
 &nbsp;
@@ -322,6 +344,12 @@ The *Home* page contains the header and footer as mentioned above. It also conta
 
 
 ## Future Features:
+
+1. Users can add their own ratings to products, which will then go towards the overall rating of the product.
+1. Users can pay for their orders using PayPal
+1. Users can register for an account using their social media account
+1. Users can log in to their account using their social media account
+1. User's accounts will be automatically logged out after a period of them being inactive. 
 
 ***
 
@@ -344,18 +372,18 @@ We are looking to see if we have met all the goals we set out.
 **Met on the Basket page, users can edit products using the quantity bar and the edit button**
 * As a new user, I want to delete products straight from my basket  
 **Met on the Basket page, users can delete products using the delete button**
-* As a new user, I want to securly checkout using a credit card  
+* As a new user, I want to securely checkout using a credit card  
 **Met on the Checkout page, users can fill out the checkout form, add credit card details and make a secure payment using Stripe**
 * As a new user, I want to create a profile  
 **Met on the Register page**
 * As a new user, I want to sign up for a newsletter  
-**Met on the Newsletter page, users can fill out the formto sign up for a monthly newsletter**
+**Met on the Newsletter page, users can fill out the form to sign up for a monthly newsletter**
 * As a new user, I want to contact the company with any queries  
 **Met on the Contact Us page, users can fill out the form to send queries to the store**
 
 #### Returning User:
-* As a returning user, I want to be updated on new products via newsletter   
-**Met on the Newsletter page, users can fill out the formto sign up for a monthly newsletter**
+* As a returning user, I want to be updated on new products via the newsletter   
+**Met on the Newsletter page, users can fill out the form to sign up for a monthly newsletter**
 * As a returning user, I want to contact the company with any queries     
 **Met on the Contact Us page, users can fill out the form to send queries to the store**
 * As a returning user, I want to leave reviews on products I have purchased     
@@ -368,14 +396,14 @@ We are looking to see if we have met all the goals we set out.
 
 ## Bugs:
 ### DataError:
-After importing Django Countries, I edited the Country field in the checkout model so that a dropdown menu appeared on the checkout form for the country. When I tried to migrate the changes I was getting a "DataError". If I ran a planned migration there were no error occuring but as soon as I removed plan the error would appear. 
-* After a session with the CI tutors it was noted that I had a number of test orders in the database that were done under the old model (writting in the actual Country) and the changes were making it so the Country Field used the official ISO 3166-1 list of countries which has a default max lenght of 2. Once these test orders were deleted from the database the migration was able to be completed. 
+After importing Django Countries, I edited the Country field in the checkout model so that a dropdown menu appeared on the checkout form for the country. When I tried to migrate the changes I was getting a "DataError". If I ran a planned migration there was no error occurring but as soon as I removed the plan the error would appear. 
+* After a session with the CI tutors, it was noted that I had several test orders in the database that were done under the old model (writing in the actual Country) and the changes were making it so the Country Field used the official ISO 3166-1 list of countries which has a default max length of 2. Once these test orders were deleted from the database the migration was able to be completed. 
 
 &nbsp;
 
 ### Card Details:
-Card details not appeating on checkout:
-* When I set up the checkout eveything was working correctly except the card details box. This was not appearing at all. After rewatching the walk through video but everything seemed in order. After troubleshooting and chatting with some people in Slack and Stackoverflow it was suggested in the stripe_elements.js file to use the stripe public key in the "var stripe" instead of using an environment variable called stripePublicKey. Once I added the full key into the JS file that card details element appeared on the checkout page. 
+Card details not appearing on checkout:
+* When I set up the checkout everything was working correctly except the card details box. This was not appearing at all. After re-watching the walk through video but everything seemed in order. After troubleshooting and chatting with some people in Slack and Stackoverflow it was suggested in the stripe_elements.js file to use the stripe public key in the "var stripe" instead of using an environment variable called stripePublicKey. Once I added the full key into the JS file that card details element appeared on the checkout page. 
 <details>
 <summary>Card Error:</summary>
 
@@ -397,7 +425,7 @@ Card details not appeating on checkout:
 &nbsp;
 
 ### Display Error:
-If there were less than 4 images on a line they would display on top of eachother:
+If there were fewer than 4 images on a line they would display on top of each other:
 * After speaking with my mentor it was found that the basic layout of my products template was not structured correctly. After removing an extra row that was in the content block fixed this problem straight away. 
 <details>
 <summary>Display Error:</summary>
@@ -408,8 +436,8 @@ If there were less than 4 images on a line they would display on top of eachothe
 &nbsp;
 
 ### Edit Product Error:
-When creating the add, edit and delete product functions for the site admin there was an Attribute Error occuring when I tried to test the 'Edit Product' functionality.
-* After chatting with people on Slack it was suggested that I needed a for loop in the edit_products template to iterate through the each field of the form. I tried this but I was still getting the Attribute Error. 
+When creating the add, edit and delete product functions for the site admin there was an Attribute Error occurring when I tried to test the 'Edit Product' functionality.
+* After chatting with people on Slack it was suggested that I needed a for loop in the edit_products template to iterate through each field of the form. I tried this but I was still getting the Attribute Error. 
 * I then went to ask the CI tutors. After a few different attempts to solve the issue, it was discovered that I was missing one of the asterisks in my forms.py file. Once this second asterisk was added the page and the form loaded correctly.  
 <details>
 <summary>Edit Product Error:</summary>
@@ -420,8 +448,8 @@ When creating the add, edit and delete product functions for the site admin ther
 &nbsp;
 
 ### Modal Error:
-When adding the modal for user to add reviews the modal was appearing but was faded and the user was not able to access the different elements:
-* After doing some troubleshooting I saw a number of people say that the modal must be in a div where the position is fixed. I used Google Dev Tools to see if this was the case but still could not fix the error. I then contact the CI tutors who explained to me that because the modal postion relates to the screen itself it was clashing with some css and by moving it to the end of the html file, outside the div. This solved the issue and the modal then worked correctly   
+When adding the modal for a user to add reviews the modal was appearing but was faded and the user was not able to access the different elements:
+* After doing some troubleshooting I saw several people say that the modal must be in a div where the position is fixed. I used Google Dev Tools to see if this was the case but still could not fix the error. I then contact the CI tutors who explained to me that because the modal position relates to the screen itself it was clashing with some CSS and by moving it to the end of the HTML file, outside the div. This solved the issue and the modal then worked correctly   
 <details>
 <summary>Modal Error 1:</summary>
 
@@ -430,11 +458,35 @@ When adding the modal for user to add reviews the modal was appearing but was fa
 
 &nbsp;
 
-### Modal Submit Error:
-When adding the modal for user to add reviews the modal was appearing but was faded and the user was not able to access the different elements:
-* After doing some troubleshooting I saw a number of people say that the modal must be in a div where the position is fixed. I used Google Dev Tools to see if this was the case but still could not fix the error. I then contact the CI tutors who explained to me that because the modal postion relates to the screen itself it was clashing with some css and by moving it to the end of the html file, outside the div. This solved the issue and the modal then worked correctly   
+### Webhook Error:
+When an order was created the payment would go through but the user wouldn't receive a confirmation email. This was because the webhook handler wasn't being triggered. 
+* After spending a lot of time going over the code and rewatching the CI videos to make sure I had set up the webhooks and Stripe correctly, I got onto the CI tutors. 
+* We worked back through the code to see if we could get the terminal to print out the error. This wasn't working but Ger the tutor discovered that the Gitpod URL in the webhook on Stripe and the Gitpod URL for the workspace I was working in were different. Once I corrected this an error appeared in the terminal letting me know I had a FieldError as I had created a key called "original_basket" and it needed to be "originial_bag" for the Stripe webhooks to recognise it. As soon as this was changed the webhook handlers were triggered. 
+* This led to another error in the terminal, this time it was a "TemplateDoesNotExist" error, as I had put the wrong paths in the webhook handler to the email subject and email body.
+<details>
+<summary>Webhook Error:</summary>
 
-&nbsp;
+![Webhook Error](/documents/images/readme_images/webhooks.png)
+</details> 
+
+<details>
+<summary>500 Error:</summary>
+
+![500 Error](/documents/images/readme_images/webhook_500_error.png)
+</details> 
+
+<details>
+<summary>Field Error:</summary>
+
+![Field Error](/documents/images/readme_images/field_error.png)
+</details> 
+
+<details>
+<summary>Template Error:</summary>
+
+![Template Error](/documents/images/readme_images/template_does_not_exist.png)
+</details> 
+
 
 ***
 
@@ -477,9 +529,6 @@ For this project, the following technologies were used.
 #### Balsamiq 
 * Balsamiq was used to draw initial Wireframes for this project.
 
-#### Figma
-* Figma was used during the structure phase of this project. It was used to create a sitemap of the website. 
-
 #### Google Development Tools
 * Google Dev Tools was used to edit code and check responsiveness before making the changes permanent.
 
@@ -501,8 +550,8 @@ Testing information can be viewed [here](/documents/TESTING.md)
 ### Validation:
 
 * HTML:
-      - Facebook Pixel code was removed form the base.html file as it was causing valiadition errors. To view this code please go to the [Marketing documnet](/documents/MARKETING.md) 
-      - HTML code came back it one error which was in relation to using list items inside a nav tag. As this was something that was done in the CI walkthrough and these elements were an important part of the webiste I choose not to change the code. 
+      - Facebook Pixel code was removed from the base.html file as it was causing validation errors. To view this code please go to the [Marketing document](/documents/MARKETING.md) 
+      - The HTML code came back it one error which was about using list items inside a nav tag. As this was something that was done in the CI walkthrough and these elements were an important part of the website I choose not to change the code. 
 
 * CSS:
       - No errors were found when passed through the [W3C Validator tool](https://jigsaw.w3.org/css-validator/validator) 
@@ -513,7 +562,7 @@ Testing information can be viewed [here](/documents/TESTING.md)
 
 * Python: 
       - Since PEP8Online validator is no longer available, I followed the CI recommendation for validating my Python code. 
-      - To view the steps taken to validate the Python code, please check the [Validation Document]()
+      - To view the steps taken to validate the Python code, please check the [Validation Document](/documents/VALIADTION.md)
 
 ***
 
